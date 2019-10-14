@@ -1,4 +1,4 @@
 # greatmars
 
-##ссылка на JSFiddle: 
+ссылка на JSFiddle: 
 https://jsfiddle.net/rs98wqp6/
