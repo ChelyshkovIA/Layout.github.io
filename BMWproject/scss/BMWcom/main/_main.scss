@@ -1,0 +1,45 @@
+.main
+{
+    .main__show-more-button
+    {
+        font-family: $TeaserTextFont;
+        font-size: 15px;
+        line-height: 50px;
+
+        display: inline-block;
+
+        width: calc(100% - 60px);
+        height: 50px;
+        margin: 30px;
+
+        text-align: center;
+
+        color: #4d4d4d;
+        border: 2px solid #4d4d4d;
+
+        transition-property: color, background-color;
+        transition-delay: 0.2s;
+        transition-duration: 0.2s;
+        transition-timing-function: linear;
+        &:hover
+        {
+            color: #fff;
+            background-color: #4d4d4d;
+        };
+    }
+}
+
+@media(min-width:1024px){
+    .main{
+        .main__show-more-button-block{
+            display: flex;
+            justify-content: center;
+            .main__show-more-button{
+                margin-top: 50px;
+                margin-bottom: 50px;
+                display: inline-block;
+                width: 21.71vw;
+            }
+        }    
+    }   
+}

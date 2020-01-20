@@ -1,0 +1,31 @@
+.main-button
+{
+    font-family: $TeaserTextFont;
+    line-height: 50px;
+
+    display: block;
+
+    width: calc(100% - 60px);
+    height: 50px;
+    margin-top: 15px;
+    margin-right: 30px;
+    margin-left: 30px;
+
+    text-align: center;
+
+    color: $HeaderButtonHoverColor;
+    background-color: $HeaderMenuButtonColor;
+    &:hover
+    {
+        background-color: $HeaderMenuButtonHoverColor;
+    }
+}
+
+@media(min-width: 767px)
+{
+    .main-button
+    {
+        width: 180px;
+        margin-left: 50px;
+    }
+}

@@ -1,0 +1,154 @@
+.theme
+{
+    padding: 45px 0;
+    &.theme--dark-bgc
+    {
+        background-color: $MainThemeDarkBGC;
+    }
+    &.theme--last
+    {
+        background-color: #262626;
+        .theme__title
+        {
+            font-family: $TeaserTextFont;
+            font-size: 24px;
+            line-height: 34px;
+
+            text-align: left;
+
+            color: #fff;
+        }
+        .media
+        {
+            .media__content
+            {
+                border: none;
+            }
+        }
+    }
+    .theme__title
+    {
+        font-family: $TeaserTextFont;
+        font-size: 20px;
+
+        padding-right: 30px;
+        padding-left: 30px;
+
+        text-align: center;
+
+        color: $MainFontColor;
+    }
+}
+
+@media(min-width: 270px)
+{
+    .theme
+    {
+        .theme__title
+        {
+            font-size: $MainThemeFontSize;
+            line-height: 34px;
+        }
+    }
+}
+
+@media(min-width: 767px)
+{
+    .theme
+    {
+        .theme__title
+        {
+            font-size: $MainThemeFontSizeHuge;
+            line-height: 5.85vw;
+
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+    }
+}
+
+@media(min-width: 1024px)
+{
+    .theme
+    {
+        .theme__title
+        {
+            padding-right: 120px;
+            padding-left: 110px;
+        }
+
+        &.theme--last
+        {
+            .theme__title
+            {
+                font-size: 3.125vw;
+                line-height: 4.29vw;
+
+                width: 58.3%;
+                margin-left: auto;
+            }
+            .media
+            {
+                .media__content
+                {
+                    max-height: 720px;
+                    padding-right: 0;
+                    padding-left: 0;
+
+                    border: none;
+                }
+            }
+        }
+
+        &.theme--slim-media
+        {
+            .media
+            {
+                .media__content
+                {
+                    padding-right: 120px;
+                    padding-left: 110px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1125px)
+{
+    .theme
+    {
+        &.theme--last
+        {
+            .media
+            {
+                .media__content
+                {
+                    padding-right: 35px;
+                    padding-left: 35px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1280px)
+{
+    .theme
+    {
+        .theme__title
+        {
+            font-size: 75px;
+            line-height: 75px;
+        }
+
+        &.theme--last
+        {
+            .theme__title
+            {
+                font-size: 40px;
+                line-height: 55px;
+            }
+        }
+    }
+}

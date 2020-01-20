@@ -1,0 +1,69 @@
+.teaser
+{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .teaser__content
+    {
+        width: 100%;
+    }
+    .teaser__status
+    {
+        font-family: $TeaserTextFont;
+        font-size: $MainTeaserFontSize;
+        line-height: 24px;
+
+        margin-top: 15px;
+        margin-bottom: 10px;
+        padding-right: 30px;
+        padding-left: 30px;
+
+        color: $MainFontColor;
+    }
+    .teaser__text
+    {
+        font-family: $TeaserTextFont;
+        font-size: $MainTeaserTextFontsize;
+        line-height: 25px;
+
+        padding-right: 30px;
+        padding-left: 30px;
+
+        color: $MainFontColor;
+    }
+}
+
+@media(min-width: 767px)
+{
+    .teaser
+    {
+        margin-bottom: 50px;
+        .teaser__status
+        {
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+        .teaser__text
+        {
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+    }
+}
+
+@media(min-width: 1125px)
+{
+    .teaser
+    {
+        display: block;
+
+        max-width: 1260px;
+        margin-right: auto;
+        margin-left: auto;
+        .teaser__content
+        {
+            padding-right: 35px;
+            padding-left: 35px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.catalog
+{
+    display: grid;
+
+    grid-gap: 2px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vw 66.67vw 66.67vw 100vw 66.67vw 66.67vw 66.67vw
+    100vw 66.67vw 66.67vw 100vw 66.67vw 66.67vw 66.67vw;
+
+
+}
+
+@media(min-width:767px){
+	.catalog{
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: repeat(12,18.41vw);
+		grid-auto-flow: dense;
+	}
+}

@@ -1,0 +1,133 @@
+.header-menu
+{
+    position: fixed;
+    height: calc(100vh - 94px);
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+    }
+
+    z-index: 8;
+    top: 94px;
+
+    display: none;
+
+    width: 100%;
+    padding: 0 25px;
+
+    background-color: $HeaderMenuColor;
+    .header-menu__search
+    {
+        font-family: $TeaserTextFont;
+        font-size: 20px;
+        line-height: 50px;
+
+        width: 100%;
+
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        background-color: #f8f8f8;
+        background-image: url('images/icons/search.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 20px 20px;
+    }
+
+    .header-menu__navigation
+    {
+        margin-top: 30px;
+        margin-bottom: 22px;
+
+        .header-menu__nav-link
+        {
+            font-family: $TeaserTextFont;
+            font-size: 20px;
+
+            display: block;
+
+            margin-bottom: 15px;
+
+            color: $HeaderMenuTextColor;
+            &.header-menu__nav-link--active{
+                 color: $HeaderMenuTextHoverColor;   
+            }
+            &:hover
+            {
+                color: $HeaderMenuTextHoverColor;
+            };
+        }
+    }
+
+    .header-menu__text
+    {
+        font-family: $TeaserTextFont;
+        font-size: 15px;
+        line-height: 25px;
+
+        margin-top: 55px;
+        margin-bottom: 25px;
+
+        text-align: center;
+        .header-menu__text-bold
+        {
+            font-weight: bold;
+        }
+    }
+
+    .header-menu__button
+    {
+        font-family: $TeaserTextFont;
+        font-size: 15px;
+        line-height: 50px;
+
+        display: block;
+
+        width: 100%;
+        height: 50px;
+
+        text-align: center;
+
+        color: $HeaderMenuButtonFontColor;
+        background-color: $HeaderMenuButtonColor;
+        &:hover
+        {
+            background-color: $HeaderMenuButtonHoverColor;
+        };
+    }
+
+    .header-menu__countryes
+    {
+        display: block;
+    }
+
+    .header-menu__country-link
+    {
+        font-family: $TeaserTextFont;
+        font-size: 15px;
+
+        display: block;
+
+        padding: 13px 0;
+
+        border-top: 1px solid #dcdcdc;
+        &:last-child
+        {
+            margin-bottom: 10px;
+
+            border-bottom: 1px solid #dcdcdc;
+        };
+        &:hover
+        {
+            color: $HeaderMenuTextHoverColor;
+        };
+    }
+}
+
+@media(min-width:767px){
+    .header-menu{
+        display: none;
+    }
+}

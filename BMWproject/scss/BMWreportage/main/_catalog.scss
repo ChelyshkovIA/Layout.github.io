@@ -1,0 +1,29 @@
+.catalog
+{
+    display: grid;
+
+    grid-gap: 2px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vw 66.67vw;
+}
+
+@media(min-width:767px)
+{
+    .catalog
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 33.33vw;
+        grid-auto-flow: dense;
+    }
+}
+
+@media(min-width: 1125px)
+{
+    .catalog
+    {
+        max-width: 1190px;
+        max-height: 425.3px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

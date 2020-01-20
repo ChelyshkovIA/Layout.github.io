@@ -1,0 +1,41 @@
+#burger:checked ~ .header-label--close
+{
+    display: block;
+};
+
+#burger:checked ~ .header-label--burger
+{
+    display: none;
+};
+
+#burger:checked ~ .header-menu
+{
+    display: block;
+};
+
+.header-label
+{
+
+    position: fixed;
+    width: auto;
+    width: 100%;
+    z-index: 11;
+
+    padding: 40px 25px 20px 25px;
+    &.header-label--close
+    {
+        display: none;
+        background-color: #F8F8F8;
+    }
+    &.header-label--burger
+    {
+        z-index: 1;
+    }
+}
+
+
+@media(min-width:767px){
+    .header-label{
+        display: none;
+    }
+}

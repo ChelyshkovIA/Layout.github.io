@@ -1,0 +1,28 @@
+.read-more-button
+{
+    font-family: $TeaserTextFont;
+    line-height: 46px;
+
+    width: 180px;
+    height: 50px;
+    padding: 0 20px;
+
+    cursor: pointer;
+    text-align: center;
+
+    color: #fff;
+    border: 2px solid #fff;
+
+    transition-property: color, background-color;
+    transition-delay: 0.2s;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+
+    &:hover
+    {
+        color: $HeaderButtonHoverFontColor;
+        background-color: $HeaderButtonHoverColor;
+    };
+}
+
+

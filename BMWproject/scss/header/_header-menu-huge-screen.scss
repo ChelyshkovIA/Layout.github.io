@@ -1,0 +1,397 @@
+@keyframes disApp{
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes app{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.header-menu-huge-screen
+{
+    display: none;
+}
+
+@media(min-width:767px)
+{
+    .header-menu-huge-screen
+    {
+        position: absolute;
+        z-index: 3;
+        top: 0;
+
+        display: flex;
+
+        
+        
+        width: 100%;
+        height: 7vw;
+        padding-right: 50px;
+        padding-left: 50px;
+
+        background-color: #f8f8f8;
+
+        justify-content: start;
+        align-items: center;
+        .header-menu-huge-screen__link
+        {
+            font-family: $TeaserTextFont;
+            font-size: 1.56vw;
+            line-height: 52px;
+
+            padding-right: 11px;
+
+            color: $HeaderMenuTextColor;
+            &:nth-child(7)
+            {
+                padding-right: 0;
+            };
+
+            &.header-menu-huge-screen__link--active{
+                color: $HeaderMenuTextHoverColor;
+            }
+            &:hover
+            {
+                color: $HeaderMenuTextHoverColor;
+            };
+        }
+
+        .header-menu-huge-screen__label--open
+        {
+            display: inline-block;
+
+            height: 100%;
+
+            cursor: pointer;
+        }
+
+        .header-menu-huge-screen__label--close
+        {
+            display: none;
+        }
+
+        .header-menu-huge-screen__search-img
+        {
+            display: inline-block;
+
+            width: 60px;
+            height: 100%;
+            padding: 0 20px;
+
+            vertical-align: top;
+
+            background-image: url('../images/BMWcomIMG/icons/search.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 18px;
+        }
+
+        .header-menu-huge-screen__step
+        {
+            display: inline-block;
+
+            width: 0;
+            height: 30px;
+
+            border-right: 1px solid #aaa;
+        }
+
+        .header-menu-huge-screen__earth-img
+        {
+            display: inline-block;
+
+            width: 60px;
+            height: 100%;
+            padding: 0 20px;
+
+            vertical-align: top;
+
+            background-image: url('../images/BMWcomIMG/icons/planet-earth.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 16px;
+        }
+        .header-menu-huge-screen__earth-img-text
+        {
+            display: none;
+        }
+
+        #searching
+        {
+            display: none;
+        }
+
+        .header-menu-huge-screen__input-form
+        {
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            left: 60px;
+
+            display: none;
+
+            height: inherit;
+        }
+
+        #searching:checked ~ .header-menu-huge-screen__input-form
+        {
+            display: flex;
+
+            width: 40%;
+
+            align-items: center;
+        }
+
+        #searching:checked ~ .header-menu-huge-screen__link
+        {
+            visibility: hidden;
+        }
+
+        #searching:checked ~ .header-menu-huge-screen__label--open
+        {
+            visibility: hidden;
+        }
+
+        #searching:checked ~ .header-menu-huge-screen__label--close
+        {
+            position: absolute;
+            z-index: 2;
+            left: 30px;
+
+            display: inline-block;
+
+            width: 20px;
+            height: 100%;
+
+            cursor: pointer;
+        }
+
+        .header-menu-huge-screen__close-img
+        {
+            display: inline-block;
+
+            width: 20px;
+            height: 100%;
+
+            background-image: url('../images/BMWcomIMG/icons/cross-out.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 15px;
+        }
+
+        .header-menu-huge-screen__search
+        {
+            font-family: $TeaserTextFont;
+            font-size: 14px;
+
+            width: 100%;
+
+            border: none;
+            outline: none;
+            background-color: #f8f8f8;
+        }
+
+        #planet
+        {
+            display: none;
+        }
+
+        .header-menu-huge-screen__menu
+        {
+            opacity: 1;
+            display: none;
+        }
+
+        .header-menu-huge-screen__label--planet
+        {
+            display: inline-block;
+
+            height: 100%;
+        }
+
+        #planet:checked ~ .header-menu-huge-screen__menu
+        {
+            display: block;
+            animation-name: app;
+            animation-timing-function: linear;
+            animation-duration: 0.1s;
+            animation-fill-mode: forwards;
+        }
+
+        .header-menu-huge-screen__menu
+        {
+            position: absolute;
+            z-index: 5;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: auto;
+
+            background-color: #f8f8f8;
+
+            .header-menu-huge-screen__menu-info
+            {
+                font-family: $TeaserTextFont;
+                font-size: 15px;
+
+                display: inline-block;
+
+                width: 100%;
+                margin-top: 53px;
+
+                text-align: center;
+
+                color: $MainHeadlineFontColor;
+            }
+
+            .header-menu-huge-screen__menu-button
+            {
+                font-family: $TeaserTextFont;
+                font-size: 15px;
+                line-height: 50px;
+
+                display: block;
+
+                width: 180px;
+                height: 50px;
+                margin: 30px auto 0 auto;
+
+                text-align: center;
+
+                color: $HeaderMenuButtonFontColor;
+                background-color: $HeaderMenuButtonColor;
+                &:hover
+                {
+                    background-color: $HeaderMenuButtonHoverColor;
+                };
+            }
+
+            .header-menu-huge-screen__menu-nav
+            {
+                width: 28.5%;
+                margin-top: 40px;
+                margin-left: 50px;
+
+                .header-menu-huge-screen__menu-nav-header
+                {
+                    font-family: $TeaserTextFont;
+                    font-size: 15px;
+                    font-weight: bold;
+
+                    margin-bottom: 10px;
+                    padding-bottom: 10px;
+
+                    color: $HeaderMenuTextColor;
+                    border-bottom: 1px solid #ccc;
+                }
+
+                .header-menu-huge-screen__menu-link
+                {
+                    font-family: $TeaserTextFont;
+                    font-size: 15px;
+
+                    display: block;
+
+                    width: auto;
+                    padding: 5px 0;
+
+                    color: $MainHeadlineFontColor;
+                    &:hover
+                    {
+                        color: $HeaderMenuTextHoverColor;
+                    };
+                }
+            }
+        }
+
+        .header-menu-huge-screen__label--planet-close
+        {
+            display: none;
+        }
+
+        #planet:checked ~ .header-menu-huge-screen__label--planet-close
+        {
+            position: absolute;
+            z-index: 6;
+            top: 25px;
+            left: 50px;
+
+            display: block;
+
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+@media(min-width:1023px)
+{
+    .header-menu-huge-screen
+    {
+        height: 5.44vw;
+        padding-left: 100px;
+        .header-menu-huge-screen__earth-img-text
+        {
+            font-family: $TeaserTextFont;
+            font-size: 10px;
+            line-height: 5.44vw;
+
+            display: inline-block;
+
+            vertical-align: top;
+
+            color: $HeaderMenuTextColor;
+        }
+        .header-menu-huge-screen__earth-img
+        {
+            padding-left: 0;
+        }
+        .header-menu-huge-screen__link
+        {
+            font-size: 1.25vw;
+        }
+    }
+    .header-menu-huge-screen__menu
+    {
+        .header-menu-huge-screen__menu-nav-flex
+        {
+            display: flex;
+
+            justify-content: center;
+        }
+    }
+}
+
+@media(min-width:1278px)
+{
+    .header-menu-huge-screen
+    {
+        display: flex;
+
+        height: 70px;
+        padding-left: 100px;
+        padding-right: 450px;
+        justify-content: center;
+        .header-menu-huge-screen__link
+        {
+            font-size: 16px;
+        }
+        .header-menu-huge-screen__earth-img-text
+        {
+            line-height: 70px;
+        }
+    }
+}

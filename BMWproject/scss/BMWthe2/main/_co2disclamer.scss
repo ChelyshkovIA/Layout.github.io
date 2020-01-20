@@ -1,0 +1,49 @@
+.co2disclamer
+{
+    margin-top: 15px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    .co2disclamer__text
+    {
+        font-family: $TeaserTextFont;
+        line-height: 25px;
+        &.co2disclamer__text-bold
+        {
+            font-weight: bold;
+        }
+    }
+}
+
+@media(min-width: 767px)
+{
+    .co2disclamer
+    {
+        display: flex;
+
+        margin-right: 50px;
+        margin-left: 50px;
+
+        justify-content: center;
+        flex-wrap: wrap;
+        .co2disclamer__text
+        {
+            padding-right: 15px;
+        }
+    }
+}
+
+@media(min-width: 1270px)
+{
+    .co2disclamer
+    {
+        width: 1080px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

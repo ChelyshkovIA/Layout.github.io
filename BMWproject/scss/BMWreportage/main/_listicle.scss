@@ -1,0 +1,153 @@
+.listicle
+{
+    width: calc(100% - 60px);
+    margin: 30px;
+    .listicle__text
+    {
+        font-family: $TeaserTextFont;
+        font-size: $MainListicleFontSize;
+        line-height: 25px;
+
+        display: block;
+
+        margin-top: 15px;
+
+        color: $MainFontColor;
+    }
+}
+
+@media(min-width: 767px)
+{
+    .listicle
+    {
+        width: calc(100% - 100px);
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
+
+
+@media(min-width: 1024px)
+{
+    .listicle
+    {
+        position: relative;
+
+        display: block;
+
+        width: calc(50% - 100px);
+        margin-right: auto;
+        margin-left: 100px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        .media
+        {
+            position: absolute;
+            top: 0;
+            right: -100%;
+
+            width: 100%;
+        }
+
+        &.listicle--media
+        {
+            position: relative;
+
+            display: flex;
+
+            width: calc(100% - 190px);
+            margin-right: 100px;
+            margin-left: 90px;
+
+            align-items: center;
+
+            .listicle__text
+            {
+                width: 40vw;
+                padding-right: 40px;
+            }
+            .media
+            {
+                position: static;
+
+                display: flex;
+                flex-direction: column;
+
+                width: 100%;
+                height: 100%;
+                margin-right: 0;
+                margin-left: 0;
+                padding-top: 0;
+
+                justify-content: center;
+                .media__content
+                {
+                    max-width: 514px;
+                    padding-bottom: 30px;
+
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1270px)
+{
+    .listicle
+    {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        .listicle__text
+        {
+            display: block;
+
+            width: 1080px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        &.listicle--media
+        {
+            display: flex;
+
+            width: 1100px;
+            margin-right: auto;
+            margin-left: auto;
+
+            align-items: center;
+
+            .listicle__text
+            {
+                width: 400px;
+                margin-right: 0;
+                margin-left: 0;
+                padding-right: 0;
+                padding-left: 0;
+            }
+
+            .media
+            {
+                position: static;
+
+                width: 680px;
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: 60px;
+                .media__content
+                {
+                    max-width: 640px;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+                .media__caption
+                {
+                    display: inline-block;
+
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

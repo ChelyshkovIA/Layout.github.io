@@ -1,0 +1,45 @@
+.co2datfooter
+{
+    width: 100%;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    .co2datfooter__text
+    {
+        font-family: $TeaserTextFont;
+        line-height: 25px;
+
+        color: $MainFontColor;
+    }
+}
+
+@media(min-width: 767px)
+{
+    .co2datfooter
+    {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
+
+@media(min-width: 1024px)
+{
+    .co2datfooter
+    {
+        padding-right: 90px;
+        padding-left: 100px;
+    }
+}
+
+@media(min-width: 1270px)
+{
+    .co2datfooter
+    {
+        width: 1080px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}

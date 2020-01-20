@@ -1,0 +1,43 @@
+.main-bmw-logo
+{
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    right: 30px;
+
+    width: 70px;
+}
+
+@media(min-width: 767px)
+{
+    .main-bmw-logo
+    {
+        right: 50px;
+
+        width: 9.76vw;
+    }
+}
+
+@media(min-width: 1024px)
+{
+    .main-bmw-logo
+    {
+        right: 100px;
+
+        width: 100px;
+
+        box-shadow: 0 0 64px 0 rgba(0,0,0,.1);
+    }
+}
+
+@media(min-width: 1125px)
+{
+    .main-bmw-logo
+    {
+        right: 134px;
+
+        width: 100px;
+
+        box-shadow: 0 0 64px 0 rgba(0,0,0,.1);
+    }
+}

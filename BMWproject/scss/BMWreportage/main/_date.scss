@@ -1,0 +1,40 @@
+.date
+{
+    font-family: $TeaserTextFont;
+    font-size: $MainDateFontSize;
+
+    display: flex;
+
+    width: calc(100% - 60px);
+    margin: 30px 30px 0 30px;
+
+    color: $MainFontColor;
+
+    justify-content: start;
+}
+
+@media(min-width: 767px)
+{
+    .date
+    {
+        margin: 30px 50px 0 50px;
+    }
+}
+
+@media(min-width: 1024px)
+{
+    .date
+    {
+        width: auto;
+        margin: 30px 50px 0 100px;
+    }
+}
+
+@media(min-width: 1270px)
+{
+    .date
+    {
+        width: 1080px;
+        margin: 30px auto 0 auto;
+    }
+}

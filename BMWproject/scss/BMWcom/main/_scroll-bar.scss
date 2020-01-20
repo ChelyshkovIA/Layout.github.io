@@ -1,0 +1,157 @@
+@keyframes Scroll
+{
+    0%
+    {
+        transform: translateX(0px);
+    }
+
+    50%
+    {
+        transform: translateX(calc(-2464px + 100vw));
+    }
+
+    100%
+    {
+        transform: translateX(0px);
+    }
+}
+
+
+.scroll-bar
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: auto;
+
+    background-color: $MainScrollBarColor;
+
+    .scroll-bar__bg-dark{
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+    }
+    .scroll-bar__title
+    {
+        font-family: $TeaserTextFont;
+        font-size: $MainScrollBarHeaderSize;
+
+        position: sticky;
+        left: 0;
+
+        margin: 45px 0 30px 0;
+        padding-right: 30px;
+        padding-left: 30px;
+
+        text-align: center;
+
+        color: $MainScrollBarFontColor;
+    }
+
+    .scroll-bar__items
+    {
+        display: flex;
+
+        animation: Scroll 40s linear infinite;
+
+        background-color: $MainScrollBarColor;
+        &:hover
+        {
+            -webkit-animation-play-state: paused;
+               -moz-animation-play-state: paused;
+                    animation-play-state: paused;
+        };
+        .scroll-bar__item
+        {
+            display: flex;
+            flex-direction: column;
+
+            margin: 30px 0 40px 12px;
+
+            align-items: center;
+            .scroll-bar__border-image
+            {
+                display: flex;
+                overflow: hidden;
+
+                width: 164px;
+                height: 164px;
+
+                border: 4px solid #fff;
+                border-radius: 82px;
+
+                justify-content: center;
+                align-items: center;
+                .scroll-bar__inner-border-image
+                {
+                    position: relative;
+
+                    overflow: hidden;
+
+                    width: 156px;
+                    height: 156px;
+
+                    border: 3px solid $MainScrollBarColor;
+                    border-radius: 78px;
+                    .scroll-bar__image
+                    {
+                        position: absolute;
+                        z-index: 1;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+
+                        min-width: 154px;
+                        margin: auto;
+
+                        transition: transform 3s ease-out,
+                                    opacity   1.5s ease-out;
+                        &:hover{
+                            transform:scale(1.12);
+                            opacity: 0.5;
+                        };
+                    }
+                }
+            }
+
+            .scroll-bar__text
+            {
+                font-family: $TeaserTextFont;
+                font-size: 15px;
+
+                max-width: 140px;
+
+                text-align: center;
+
+                color: $MainScrollBarFontColor;
+                .scroll-bar__text-bold
+                {
+                    font-size: 12px;
+                    font-weight: bold;
+
+                    display: inline-block;
+
+                    max-width: 140px;
+                    margin-top: 11.25px;
+                    margin-bottom: 11.25px;
+
+                    color: $MainScrollBarFontColor;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:767px){
+    .scroll-bar{
+        .scroll-bar__title{
+            font-size: 3.125vw;
+            line-height: 1.2;
+        }
+    }
+}

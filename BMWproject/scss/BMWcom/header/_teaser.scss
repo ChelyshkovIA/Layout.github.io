@@ -1,0 +1,145 @@
+.teaser
+{
+    position: relative;
+    overflow: hidden;
+
+    height: 133.333vw;
+    margin-bottom: 2px;
+    
+    &:hover{
+        .teaser__video{
+            transform:scale(1.12);
+            opacity: 0.5;
+        }
+    };
+
+    .teaser__bg-dark{
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        background-color: #000;
+    }
+    .teaser__video
+    {   
+        position: absolute;
+        z-index: 0;
+        object-fit:cover;
+        height: 100%;
+        width: 100%;
+        transition: transform 3s ease-out,
+                    opacity   1.5s ease-out;
+    }
+    .teaser__text
+    {
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        padding: 20px 20px 40px 20px;
+
+        .teaser__subline
+        {
+            margin-bottom: 5px;
+        }
+
+        .teaser__headline
+        {
+            margin-bottom: 20px;
+        }
+    }
+    .teaser__image
+    {
+        position: absolute;
+        top: 10px;
+        right: 30px;
+
+        width: 70px;
+        z-index: 7;
+    }
+}
+
+@media(min-width:767px){
+    .teaser{
+        height: 100%;
+        margin: 0;
+        .teaser__image{
+            display: inline-block;
+            right: 100px;
+            width: 75px;
+            height: 10.9vw;
+            width: auto;
+        }
+
+        &.teaser--large{
+            .teaser-info{
+                width: 80%;
+            }
+            grid-column-start:1;
+            grid-column-end: 3;
+            -ms-grid-row:1; 
+            -ms-grid-column:1; 
+            -ms-grid-column-span:2;
+        }
+        .teaser__subline{
+            font-size: 1.953125vw;
+            line-height: 3.515625vw;
+            margin-bottom: .78125vw;   
+        }
+        .teaser__headline{
+            &.headline{
+                line-height: 5.625vw;
+            }
+            font-size:4.69vw;
+            line-height: 4.3vw;
+        }
+        .teaser__text{
+            padding-left: 5vw;
+            padding-right: 5vw;
+        }
+        
+    }
+}
+
+@media(min-width:1030px){
+    .teaser{
+        .teaser__image{
+            right: 100px;
+            height: 112px;
+            width: 100px;
+        }
+        .teaser-info{
+            padding: 5vw;
+        }
+        
+    }
+}
+
+@media(min-width:1300px){
+    .teaser{
+        .teaser__image{
+            right: 135px;
+        }
+        .teaser-info{
+            max-width: 1024px;
+        }
+        
+        &.teaser--large{
+            .teaser__text{
+                .teaser__headline{
+                    font-size: 60px;
+                    line-height:72px;
+                }
+            }
+        }
+        .teaser__text{
+            .teaser__headline{
+                font-size: 40px;
+                line-height:4.29vw;
+            }
+        }
+        .teaser__subline{
+
+        }
+        
+    }
+}

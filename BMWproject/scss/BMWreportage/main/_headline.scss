@@ -1,0 +1,60 @@
+.headline
+{
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 30px 0;
+    .headline__title
+    {
+        font-family: $TeaserTextFont;
+        font-size: $MainHeadlineFontSize;
+        line-height: 34px;
+
+        text-align: left;
+
+        color: $MainFontColor;
+    }
+}
+
+@media(min-width: 767px)
+{
+    .headline
+    {
+        margin-right: 50px;
+        margin-left: 50px;
+        padding: 30px 0;
+        .headline__title
+        {
+            font-size: $MainHeadlineFontSizeHuge;
+        }
+    }
+}
+
+@media(min-width: 1024px)
+{
+    .headline
+    {
+        display: block;
+
+        width: 50%;
+        margin-right: 90px;
+        margin-left: auto;
+    }
+}
+
+@media(min-width: 1295px)
+{
+    .headline
+    {
+        display: block;
+
+        width: 1270px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 635px;
+        .headline__title
+        {
+            font-size: $MainHeadlineFontSizeHuge;
+            line-height: 55px;
+        }
+    }
+}

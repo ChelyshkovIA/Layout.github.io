@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Story</title>
+	<link rel="stylesheet" href="css/BMWreportage.css">
+	<link rel="stylesheet" href="fontello-b3df76ce/css/fontello.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<img class="main-bmw-logo" src="images/BMWreportageIMG/bmw-header-logo.png" alt="our logotype">
+
+		<input type="checkbox" id="burger">
+		
+		<label for="burger" class="header-label header-label--burger">
+			<span class="header-label__menu-burger menu-burger"><span class="icon-menu"></span></span>
+		</label>
+
+		<label for="burger" class="header-label header-label--close">
+			<span class="header-label__menu-burger menu-close"><span class="icon-cancel"></span></span>
+		</label>
+
+		<div class="header-menu">
+			<form action="#" method="get" name="searching">
+				<input class="header-menu__search" type="search" placeholder="Search" name="searching">
+			</form>
+			<nav class="header-menu__navigation">
+				<a class="header-menu__nav-link" href="#">Home</a>
+				<a class="header-menu__nav-link header-menu__nav-link--active" href="#">Automotive Life</a>
+				<a class="header-menu__nav-link" href="#">Design</a>
+				<a class="header-menu__nav-link" href="#">Innovation</a>
+				<a class="header-menu__nav-link" href="#">Perfomance</a>
+				<a class="header-menu__nav-link" href="#">Models</a>
+			</nav>
+			<p class="header-menu__text">
+				<b class="header-menu__text-bold">BMW in your country</b>
+				<br>
+				Learn more about BMW models, products and services:
+			</p>
+			<a class="header-menu__button" href="#">BMW in your country</a>
+			<p class="header-menu__text">Choose a different country</p>
+			<nav class="header-menu__countryes">
+				<a class="header-menu__country-link" href="#">Australia</a>
+				<a class="header-menu__country-link" href="#">Belarus</a>
+				<a class="header-menu__country-link" href="#">Czech Republic</a>
+				<a class="header-menu__country-link" href="#">Finland</a>
+				<a class="header-menu__country-link" href="#">France</a>
+				<a class="header-menu__country-link" href="#">Germany</a>
+				<a class="header-menu__country-link" href="#">Iceland</a>
+				<a class="header-menu__country-link" href="#">Poland</a>
+				<a class="header-menu__country-link" href="#">Sweden</a>
+				<a class="header-menu__country-link" href="#">USA</a>
+			</nav>
+		</div>
+		
+		<div class="header-menu-huge-screen">
+			<input type="checkbox" id="searching">
+
+			<a class="header-menu-huge-screen__link" href="#">Home</a>
+			<a class="header-menu-huge-screen__link header-menu-huge-screen__link--active" href="#">Automotive Life</a>
+			<a class="header-menu-huge-screen__link" href="#">Design</a>
+			<a class="header-menu-huge-screen__link" href="#">Innovation</a>
+			<a class="header-menu-huge-screen__link" href="#">Perfomance</a>
+			<a class="header-menu-huge-screen__link" href="#">Models</a>
+			
+			<label class="header-menu-huge-screen__label header-menu-huge-screen__label--open" for="searching">
+				<span class="header-menu-huge-screen__search-img"></span>
+			</label>
+
+			
+			<label class="header-menu-huge-screen__label header-menu-huge-screen__label--close" for="searching">
+				<span class="header-menu-huge-screen__close-img"></span>
+			</label>
+
+			<form class="header-menu-huge-screen__input-form" action="#" method="get" name="searching">
+				<input class="header-menu-huge-screen__search" type="text" placeholder="Search" name="searching">
+			</form>
+
+			<span class="header-menu-huge-screen__step"></span>
+
+			<input type="checkbox" id="planet">
+
+			<label class="header-menu-huge-screen__label header-menu-huge-screen__label--planet" for="planet">
+				<span class="header-menu-huge-screen__earth-img"></span>
+				<span class="header-menu-huge-screen__earth-img-text">BMW in your country</span>
+			</label>
+			
+			<label class="header-menu-huge-screen__label header-menu-huge-screen__label--planet-close" for="planet">
+				<span class="header-menu-huge-screen__close-img"></span>
+			</label>
+			
+			<div class="header-menu-huge-screen__menu">
+				<p class="header-menu-huge-screen__menu-info">Learn more about BMW models, products and services:</p>
+
+				<a href="#" class="header-menu-huge-screen__menu-button">BMW in your country</a>
+
+				<p class="header-menu-huge-screen__menu-info">Choose adifferent country</p>
+				
+				<div class="header-menu-huge-screen__menu-nav-flex">
+					<nav class="header-menu-huge-screen__menu-nav">
+						<h2 class="header-menu-huge-screen__menu-nav-header">Africa</h2>
+						<a class="header-menu-huge-screen__menu-link" href="#">Algeria</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Angola</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Egypt</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Ghana</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Libya</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Mauritius</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Morocco</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Nigeria</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Senegal</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">South Africa</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Tunisia</a>
+					</nav>
+
+					<nav class="header-menu-huge-screen__menu-nav">
+						<h2 class="header-menu-huge-screen__menu-nav-header">Asia & Pacific</h2>
+						<a class="header-menu-huge-screen__menu-link" href="#">Abu Dhabi</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Australia</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Bahrain</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Bangladesh</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Brunei</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Cambodia</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">China</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Dubai (UAE)</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">India</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Indonesia</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Iraq</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Israel</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Japan</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Jordan</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Kazakhstan</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Korea</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Kuwait</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Laos</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Lebanon</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Malaysia</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Middle East</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Mongolia</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Myanmar</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">New Zealand</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Oman</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Pakistan</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Philippines</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Qatar</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Russia</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Saudi Arabia</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Singapore</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Sri Lanka</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Thailand</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Turkey</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Uzbekistan</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Vietnam</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Yemen</a>
+					</nav>
+
+					<nav class="header-menu-huge-screen__menu-nav">
+						<h2 class="header-menu-huge-screen__menu-nav-header">Europe</h2>
+						<a class="header-menu-huge-screen__menu-link" href="#">Albania</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Armenia</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Austria</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Azerbaijan</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Belarus</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Belgium</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Bosnia and Herzegovina</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Bulgaria</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Croatia</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Cyprus</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Czech Republic</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Denmark</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Estonia</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Finland</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">France</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Georgia</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Germany</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Greece</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Guadeloupe</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Hungary</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Iceland</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Ireland</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Italy</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Latvia</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Lithuania</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Luxembourg</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Macedonia</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Malta</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Martinique</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Moldova</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Netherlands</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">New Caledonia</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Norway</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Poland</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Portugal</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Romania</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Réunion</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Serbia</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Slovakia</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Slovenia</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Spain</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Sweden</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Switzerland</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Ukraine</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">United Kingdom</a>
+					</nav>
+					
+					<nav class="header-menu-huge-screen__menu-nav">
+						<h2 class="header-menu-huge-screen__menu-nav-header">North & South America</h2>
+						<a class="header-menu-huge-screen__menu-link" href="#">Argentina</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Bolivia</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Brazil</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Canada</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Chile</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Colombia</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Costa Rica</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Dominican Republic</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Ecuador</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">El Salvador</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Guam</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Guatemala</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Honduras</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Jamaica</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Mexico</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Panama</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Paraguay</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Peru</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Trinidad and Tobago</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">USA</a>
+						<a class="header-menu-huge-screen__menu-link" href="#">Uruguay</a>
+					</nav>
+				</div>		
+			</div>
+		</div>
+
+		<div class="story-header">
+			<img class="story-header__bg story-header__bg--small" src="images/BMWreportageIMG/content/content1.jpg" alt="author photo">
+			<img class="story-header__bg story-header__bg--huge" src="images/BMWreportageIMG/huge-screen-content/header-image.jpg" alt="author photo">
+
+			<div class="story-header__text">
+				<h1 class="story-header__title">Berlin Wall: driving to freedom in a BMW Isetta</h1>
+				<p class="story-header__reading-time">
+					<span class="story-header__rt-icon">
+						<span class="story-header__rt-icon-more icon-down-open-mini"></span>
+					</span>
+					12 min reading time
+				</p>	
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<div>
+			<p class="preview"> It was a daring plan: Klaus-Günter Jacobi helped his best friend flee East Germany by smuggling him across the Berlin Wall – the barrier that divided a city and a country – in a modified BMW Isetta. You can read his incredible story here. </p>
+
+			<p class="date">8 October 2019</p>
+		</div>	
+
+		<div class="media">
+			<img class="media__content" src="images/BMWreportageIMG/content/content2.webp" alt="The Bornholmer Street border crossing in the 1960s.">
+
+			<p class="media__copyright">© ullstein bild/Dieter Lohse</p>
+			<p class="media__caption">The Bornholmer Street border crossing in the 1960s. The bridge separated East and West Berlin. </p>
+		</div>
+
+		<div class="quote quote--first">
+			<blockquote class="quote__text" cite="#">"I was focused on doing just one thing – getting my buddy out of there."</blockquote>
+
+			<p class="quote__author">Klaus-Günter Jacobi</p>
+		</div>
+
+		<div class="listicle listicle--first">
+			<p class="listicle__text">
+				May 23 1963. A gloomy and rainy evening. In front of the border crossing at Bornholmer Street sits a BMW Isetta. The driver wants to cross the heavily guarded border between East and West Berlin. A line of cars is backed up, waiting at the border checkpoint on the East German side. The nervousness of both the drivers and the soldiers is palpable. Guard dogs bark. After more than an hour the Isetta finally pulls up to the barrier. Grim-faced border guards check papers and inspect the car. Every moment is agony for the young driver – and even more so for the stowaway passenger hidden in the Isetta's tiny engine bay. Muffled voices from outside drift through the air to his cramped hiding place. Only a few millimeters of metal protect him from the searching eyes of the guards. Suddenly the engine hatch door opens and a flashlight shines inside. He holds his breath… If the guards find him now his attempted flight to freedom will earn him a one-way ticket to an East German jail.
+			</p>
+		</div>
+
+		<div class="media">
+			<img class="media__content" src="images/BMWreportageIMG/content/content3.webp" alt="The great escape: Klaus-Günter Jacobi modified his BMW Isetta to help his best friend flee East Germany.">
+
+			<p class="media__caption">The great escape: Klaus-Günter Jacobi modified his BMW Isetta to help his best friend flee East Germany. </p>
+		</div>
+
+		<div class="text">
+			<h2 class="text__title"> 
+				<span class="text__step"></span>
+				Fast forward to Berlin in October 2019, 30 years after the fall of the Berlin Wall 
+			</h2>
+
+			<p class="text__content">Klaus-Günter Jacobi – 6 foot 5 with a mane of white hair – sits at a round table with a green granite top. The 79-year-old welcomes us into his 322 square foot apartment in Berlin for the interview. It's furnished with wooden wardrobes, cane chairs covered with sheepskins and a small, old and dusty tube television. From the balcony you can just make out Teufelsberg in the distance. Teufelsberg, or Devil's Mountain, was a spy station during the Cold War where the US listened in on and jammed the radio signals coming from the Eastern Bloc controlled by the Soviet Union.</p>
+
+			<strong class="text__bold-content">Jacobi likes his view. It reminds him of how closely the history of the two Germanies is linked with his own.</strong>
+		</div>
+
+		<div class="media">
+			<img class="media__content" src="images/BMWreportageIMG/content/content4.webp" alt="Absolute freedom: the BMW Isetta opened up the world to young Jacobi. Left: his driver's license from 1967.">
+
+			<p class="media__caption">Absolute freedom: the BMW Isetta opened up the world to young Jacobi. Left: his driver's license from 1967. </p>
+		</div>
+
+		<div class="text">
+			<h2 class="text__title"> 
+				<span class="text__step"></span>
+				Escape from East Germany cost some their lives 
+			</h2>
+
+			<p class="text__content">Klaus-Günter Jacobi was born in Pankow, a borough of East Berlin, in 1940. His father was an army officer and his mother was a housewife. After the war the East German Communist Party came to power and dictated the modest existence of the family. “We always hoped it would get better,” says Jacobi, “but it never did.”</p>
+
+			<strong class="text__bold-content">In October 1958, as the Party did away with ration cards and those who criticized the system were increasingly denounced as enemies of the state, the Jacobis packed their bags and fled. From their new home in West Berlin they watched as things grew worse – how East Germany was taking away its citizens' freedom of movement by putting up stone walls with barbed wire; how East Berliners were digging tunnels or trying to ram trucks through what East Germans called the “Anti-Fascist Protection Rampart” to get to freedom; how the escape of many East Germans failed, landing them in prison. At least 140 people died at the Berlin Wall, many of whom were shot by the East German border patrol.</strong>
+		</div>
+
+		<div class="theme theme--dark-bgc">
+			<h2 class="theme__title">HISTORICAL OVERVIEW</h2>
+
+			<div class="media">
+				<img class="media__content media__content--mobile" src="images/BMWreportageIMG/content/content5.webp" alt="hronology">
+
+				<img class="media__content media__content--desktop" src="images/BMWreportageIMG/huge-screen-content/content1.webp" alt="hronology">
+			</div>
+		</div>
+
+		<div class="listicle">
+			<p class="listicle__text">
+				While the Jacobis fled, Manfred Koster chose to remain. The two boys had played together in the street when they were children and attended the same school. Maybe Manfred Koster hung onto the idea of socialism a little longer; maybe he just didn't want to leave home. But he certainly remained in the Soviet Occupation Zone too long after his friend left.
+			</p>
+		</div>
+
+		<div class="headline">
+			<h3 class="headline__title">Escaping across the Berlin Wall is too risky</h3>
+		</div>
+
+		<div class="listicle">
+			<p class="listicle__text">
+				In November 1962, a little over one year after the Wall had gone up, Manfred Koster was drafted into East Germany's National People's Army. He was to report for duty on June 1 1963. As a staunch pacifist he felt anything was better than that – and decided to defect. He had had enough of East Germany, the way it spied on and suppressed its own citizens. They had taken his freedom away, so there was nothing left for him but to leave.
+			</p>
+
+			<strong class="listicle__text">
+				The newly built wall made escape almost impossible. The risk of climbing over it, being discovered and shot was too high. Koster would have to find another way out. Then he remembered his old friend Klaus-Günter Jacobi. Maybe he would have an idea. But how could he reach him in the other part of the city? And how could they plan escape in secret?
+			</strong>
+
+			<p class="listicle__text">
+				Koster quickly decided he needed to pay a visit to Jacobi in West Berlin. He had to find a way to sneak out. Manfred's brother Hans had already gone to live in the West at that point. So when Hans came to visit him, Manfred took Hans' West German ID and used it for one night to get across. As the brothers looked almost like twins, Manfred had no problem going to West Berlin. He showed up completely unannounced at Jacobi's door. And that is the night when Jacobi hatched the plan to use his BMW Isetta to smuggle his friend through the border.
+			</p>
+		</div>
+
+		<div class="media">
+			<img class="media__content" src="images/BMWreportageIMG/content/content6.webp" alt="With more than 160,000 cars produced, the Isetta is the best-selling single cylinder car of all time.">
+
+			<p class="media__caption">With more than 160,000 cars produced, the Isetta is the best-selling single cylinder car of all time.</p>
+		</div>
+
+		<div class="text">
+			<h2 class="text__title"> 
+				<span class="text__step"></span>
+				A BMW Isetta makes history
+			</h2>
+
+			<p class="text__content">Just as Klaus-Günter Jacobi's life is part of Germany's post-war history, so too is the BMW Isetta, at least in that of West Germany <a class="text-link" href="#">(➜ A little car with a big history)</a>. In those days, only two percent of the German population had the means to buy a car. So when the tiny car first hit showrooms in 1955, priced at only 2,550 German marks (about $1,450 today), most households could afford one. And even thought it only had a 13 hp engine and a maximum speed of 50 mph, it could still run – and does to this day, as classic car collectors know <a class="text-link" href="#">(➜ BMW Isetta: tips from a classic car pro)</a>.</p>
+
+			<strong class="text__bold-content">Jacobi saw his first Isetta (also known as a “bubble car,” and a "cuddle coach" in Germany) in 1961 in the showroom window of a dealer right next to his favorite bar, The Bathtub. He paid just 1,500 marks to drive away in the little red and white BMW Isetta.</strong>
+
+			<p class="text__content">He remembers driving the car to Paris to visit his sister, chauffeuring admiring women around and perching on the seat so he could stick his head out of the sunroof, while pedestrians and other drivers gawked at him. But the one experience that stands out from all the rest is the escape from East Germany.</p>
+		</div>
+
+		<div class="media">
+			<img class="media__content" src="images/BMWreportageIMG/content/content7.webp" alt="A memento: the red and white Isetta toy car stowed away in a living room cabinet looks just like the original.">
+
+			<p class="media__caption">A memento: the red and white Isetta toy car stowed away in a living room cabinet looks just like the original.</p>
+		</div>
+
+		<div class="quote">
+			<blockquote class="quote__text" cite="#">"Using a BMW Isetta as an escape car – the plan was as brilliant as it was crazy."</blockquote>
+		</div>
+
+		<div class="listicle listicle--media">
+			<div>
+				<p class="listicle__text">
+					Using a car that is a mere 55 inches wide by 90 inches long to defect from the Eastern Bloc was part genius and part insanity.
+				</p>
+
+				<strong class="listicle__text">
+					Genius because no one would ever suspect that such a little car, or the “motor with a jump seat” as it was sometimes derogatively known, would be capable of hiding a human stowaway. Larger vehicles, in contrast, were scrupulously inspected by the DDR guards, and were sometimes even measured to see whether hiding spaces had been built into them.
+				</strong>
+
+				<p class="listicle__text">
+					Insane because: how are you supposed to hide a 5-foot-7 man in a two-seater during a rigorous inspection? The guards painstakingly search the inside, and then use a mirror to check underneath the entire car. The only possibility Jacobi sees is a hollow space behind the seat that is directly next to the engine.
+				</p>
+
+				<strong class="listicle__text">
+					Luckily Jacobi had the know-how to turn his Isetta into an escape vehicle – he had trained to become a car mechanic from 1956 to 1959. He then continued his training to become a driving teacher while earning some money in the garage where he had trained. So he had a safe place to modify the car, and the garage had all the tools he would need for it: hammers, chisels, saws, and paint.
+				</strong>
+			</div>
+
+			<div class="media">
+				<img class="media__content" src="images/BMWreportageIMG/content/content8.webp" alt="Freedom-bound: Jacobi reconstructs the route they took on the big table in his living room.">
+
+				<p class="media__caption">Freedom-bound: Jacobi reconstructs the route they took on the big table in his living room.</p>
+			</div>	
+		</div>
+
+		<div class="spacer"></div>
+
+		<div class="text">
+			<h2 class="text__title"> 
+				<span class="text__step"></span>
+				Escape car modification
+			</h2>
+
+			<p class="text__content">Over the course of several weeks, Jacobi drove to the garage almost every evening. He had to hurry, since the day Manfred was supposed to report for induction was drawing near. The boss left the garage open late. Even his colleagues came by to see how it was going and to drink a beer. This was all well and good, but hopefully no one intended to turn them in!</p>
+
+			<strong class="text__bold-content">“I have no idea how many hours I spent working on converting the Isetta. I was focused on doing just one thing - getting my buddy out of East Germany.”</strong>
+		</div>
+
+		<div class="theme theme--dark-bgc">
+			<h2 class="theme__title">THE MODIFICATION OF THE ISETTA AT A GLANCE</h2>
+			
+			<div class="listicle listicle--media">
+				<ol class="listicle__text">
+					<li>Remove the storage box behind the seat and then later weld it back in four inches higher.This frees up a space for the modifications and the stowaway.<br></li>
+					<li>Remove the seat and the spare tire and saw a 20-inch x 20-inch entrance hole into the pieceof sheet metal that serves as the rear panel.<br></li>
+					<li>Dismantle the exhaust pipe cover, and remove the air filters and everything else that takesup unnecessary space.<br></li>
+					<li>The technical modifications and the position of the passenger require the exhaust pipe tobe bent.<br></li>
+					<li>Install a floor panel out of sheet metal to the suspension to prevent the stowaway frombeing burnt by the hot exhaust.<br></li>
+					<li>Sand everything so it's perfectly smooth again, and cut off part of the rear fender so itdoesn't scrape the ground with the weight of the stowaway and raise suspicion.<br></li>
+					<li>The last modification is made on the day of the escape: the large 3.5 gallon tank, whichJacobi has already detached from its holder, is unplugged from the gas hose. A small canister,hardly bigger than an oil can, is put in the place of the tank – two quarts of gas is all he will have to get his friend over the border...<br></li>
+				</ol>
+
+				<div class="media">
+					<img class="media__content" src="images/BMWreportageIMG/content/content9.webp" alt="Freedom-bound: Jacobi reconstructs the route they took on the big table in his living room.">
+				</div>
+			</div>
+
+			<div class="media">
+				<img class="media__content" src="images/BMWreportageIMG/content/content10.webp" alt="1 / 2An ingenious idea: Klaus-Günter Jacobi in a replica of his “escape-Isetta” in an exhibit of the Berlin Wall Museum. His modified Isetta was more complex than the one in the exhibit.">
+
+				<p class="media__caption">An ingenious idea: Klaus-Günter Jacobi in a replica of his “escape-Isetta” in an exhibit of the Berlin Wall Museum. His modified Isetta was more complex than the one in the exhibit.</p>
+			</div>
+		</div>
+
+		<div class="text">
+			<h2 class="text__title"> 
+				<span class="text__step"></span>
+				Crossing the Berlin Wall comes with many obstacles
+			</h2>
+
+			<p class="text__content">Jacobi's main reason for this undertaking was to help his friend – but he also enjoyed the thrill of doing something forbidden. He wanted to make a show of resistance against an unjust authoritarian state, just as he and Manfred Koster had done when they were young before the Jacobis fled to the West. While the border was still open, the two went to the West every day to buy leather gloves, coffee, pantyhose, bananas and cigarettes. They took it all back home to the East where they hawked it “very profitably,” notes Jacobi as a roguish look comes into his brown eyes when he thinks of his younger days. Spying on the border patrol, recording when the guards change shifts, mapping out the guards' patrols: this is what they did everyday. “We were practically professionals.”</p>
+
+			<strong class="text__bold-content">But driving the car to bring his friend to freedom – this was a matter of honor. The problem was that because East Germany did not recognize West Berlin as a part of West Germany, Jacobi, as a West Berliner, was not permitted to travel into East Germany. So he had to find another driver. He found West German students who were more than willing to help organize escape attemps purely out of conviction.</strong>
+		</div>
+
+		<div class="media">
+			<img class="media__content" src="images/BMWreportageIMG/content/content11.webp" alt="From the wall to the checkpoint: all that remains of East Germany.">
+			<p class="media__caption">From the wall to the checkpoint: all that remains of East Germany. For many, the remnants of the wall stir up feelings of nostalgia for the way things were back then. But it only reminds Jacobi of the time when an entire people were imprisoned behind it.</p>
+		</div>
+
+		<div class="text">
+			<h2 class="text__title"> 
+				<span class="text__step"></span>
+				Nerve-racking moments at the border checkpoint
+			</h2>
+
+			<p class="text__content">At first there was a medical student who was going to drive the BMW Isetta. But she lost her nerve during the test drive across the border. The time waiting in the line at the border checkpoint seemed endless, and the guards' scrutiny frightened her. She backed out as soon as they were back in West Germany. “I don't hold it against her,” says Jacobi, “but it was a real shock. It was not long before Manfred was going to be called up to the army.”</p>
+
+			<strong class="text__bold-content">Then on May 23, just a week before Manfred was supposed to report, the phone suddenly ring early in the morning. Two other students are willing to step in. They don't want to tell Jacobi their names – you can't confess something you don't know. That same day, both of the men drive to East Berlin – one in the modified Isetta, the other in a VW Beetle as back-up.</strong>
+
+			<p class="text__content">Both students meet with Koster in Pankow and drive him outside of town and down a dirt road where he can hide himself in the Isetta without anyone noticing. As Jacobi showed them that afternoon, they have to take the 3.5-gallon-tank out and replace it with the mini tank. In the failing light of the flashlight, the students take a lot longer than planned to change tanks.</p>
+
+			<strong class="text__bold-content">The escape flounders at this point as a farmer comes by to see what's going on in his field. They tell him it's just a flat and everything is under control. Then it takes Manfred what feels like an eternity to squeeze himself into the tiny empty space. Fat raindrops beat down on the car, matching the racing rhythm of his pulse.</strong>
+		</div>
+
+		<div class="media">
+			<img class="media__content" src="images/BMWreportageIMG/content/content12.webp" alt="From the wall to the checkpoint: all that remains of East Germany.">
+		</div>
+
+		<div class="text">
+			<h2 class="text__title"> 
+				<span class="text__step"></span>
+				An endless wait at the border
+			</h2>
+
+			<p class="text__content">At the same time, Jacobi is waiting on the west side of the Bornholmer Bridge, smoking one cigarette after another. He keeps looking over to the border and then at his watch. By now it's 20 minutes past 11 and they are an hour and a half late. He stamps out another cigarette butt on the asphalt. The border closes at midnight…</p>
+
+			<p class="text__content">Then, right before midnight, the barrier goes up and both the Isetta and the VW cross the border.</p>
+
+			<p class="text__content">After both cars passed him, he starts to run right alongside the Isetta.</p>
+
+			<p class="text__content">In a park on Grünthaler Street, the procession comes to a halt. It takes a full five minutes for Manfred to extricate himself from the small confines. His legs are swollen, his back is aching, but it's nothing compared to the joy he feels – free at last!</p>
+		</div>
+
+		<div class="theme theme--dark-bgc theme--slim-media">
+			<h2 class="theme__title">THE ESCAPE ON MAY 23 1963</h2>
+			
+			<div class="media">
+				<img class="media__content media__content--mobile" src="images/BMWreportageIMG/content/content13.webp" alt="way to freedom">
+
+				<img class="media__content media__content--desktop" src="images/BMWreportageIMG/huge-screen-content/content2.webp" alt="way to freedom">
+			</div>
+
+			<div class="listicle">
+				<ol class="listicle__text">
+					<li>Steglitzer Damm 30 (Jacobi's apartment), 11 am. He hands over the keys to his Isetta to the two students.<br></li>
+					<li>Bornholmer Bridge, 3:55 pm. The students cross the border into East Germany.<br></li>
+					<li>Old Parish Church of the Four Evangelists, 6:05 pm. The students pick Koster up.<br></li>
+					<li>Karpfenteich pond in Heinersdorf, 9 pm. Koster squishes himself into the hiding spot in the Isetta.<br></li>
+					<li>Prenzlauer Promenade and Wisbyer Street, 10:30 pm. They drive back to the border<br></li>
+					<li>Bornholmer Bridge, 11:55 pm. After an hour’s wait at the checkpoint, they finally cross the border.<br></li>
+					<li>Park on Grüntaler Street, 12:10 am. Koster crawls out of his hiding spot a free man!<br></li>
+				</ol>
+			</div>
+		</div>
+
+		<div class="text">
+			<h2 class="text__title"> 
+				<span class="text__step"></span>
+				The fate of the Isetta
+			</h2>
+
+			<p class="text__content">At some point, Jacobi gutted his Isetta and sent it to the scrap heap. After the modification it wouldn't have passed inspection anyway. The only thing that he still has today is a key to the engine hatch door. He carefully rolls it around in his hands as he reflects on his role in this story. “Sometimes there are people who determine the history of the world for just a small moment.” He is no longer in contact with Manfred Koster. They grew apart and even fought. And as time went by, they went their separate ways. But the amazing escape he engineered is something he will never forget.</p>
+		</div>
+
+		<div class="media">
+			<img class="media__content" src="images/BMWreportageIMG/content/content14.jpg" alt="All that remains: the key to the engine hatch is all that remains of Jacobi's BMW Isetta. The rest was scrapped.">
+			<p class="media__caption">All that remains: the key to the engine hatch is all that remains of Jacobi's BMW Isetta. The rest was scrapped.</p>
+		</div>
+
+		<div class="listicle">
+			<p class="listicle__text">
+				Jacobi says that the two students went on to continue their rescue mission. They used a different Isetta, but the same principle. It was 18 months later when one of their drivers was discovered: during an attempted escape the car, which was supposedly empty, started to wobble. The woman hiding was discovered and pulled out of the hiding place. The students went to the press. “Nine East Berliners escape in an Isetta” read the headline of the evening edition on October 27, 1964. They got the idea from Klaus-Günter Jacobi.
+			</p>
+		</div>
+
+		<div class="media">
+			<img class="media__content" src="images/BMWreportageIMG/content/content15.webp" alt="A drive down memory lane: as a museum guide, Jacobi keeps the memory of the spectacular escape in his Isetta alive.">
+			<p class="media__caption">A drive down memory lane: as a museum guide, Jacobi keeps the memory of the spectacular escape in his Isetta alive.</p>
+		</div>
+
+		<div class="text">
+			<h2 class="text__title"> 
+				<span class="text__step"></span>
+				Escape should not be forgotten
+			</h2>
+
+			<p class="text__content">Even though it has been 30 years since the wall fell, Klaus-Günter Jacobi refuses to let go of the history of the two Germanies. Today he works as a guide in the Berlin Wall Museum on Friedrich Street. Of the more than 850,000 annual visitors, almost none are aware that the brains behind the modified escape car now sits staring out the top-story window at Checkpoint Charlie. But then, no one really needs to know, he thinks. The real achievement is that we are now aware that injustices were done – and that there were those who fought back.</p>
+
+			<strong class="text__content">“I had to sacrifice my Isetta, but it was worth it.”</strong>
+		</div>
+
+		<div class="theme theme--last">
+			<h2 class="theme__title">The true story of Klaus-Günter Jacobi and other escapes from East Germany in BMW Isettas inspired BMW to make the short film “The Small Escape”. Click here to see the video.</h2>
+
+			<div class="media">
+				<iframe class="media__content" style="height: 60vw;" src="https://www.youtube.com/embed/bkho0RB0zz0"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+
+		<div class="listicle">
+			<p class="listicle__text">
+				Photos: Robert Rieger; Illustrations: Jan Steins; Author: Laslo Seyda
+			</p>
+		</div>
+
+		<div class="teaser">
+			<img class="teaser__content" src="images/BMWreportageIMG/content/content16.webp" alt="">
+			<p class="teaser__status">FREEDOM AND INDEPENDENCE. FOR ALL NEXT GENERATIONS.</p>
+
+			<p class="teaser__text">BMW Group.</p>
+			<p class="teaser__text">Find out more</p>
+		</div>
+
+		<h2 class="more-title" >More articles</h2>
+
+		<div class="catalog">
+			<a href="#" class="catalog-cell catalog-cell--large">
+				<div class="catalog-cell__bg-dark"></div>
+
+
+       			<img class="catalog-cell__content catalog-cell__content--mobile" src="images/BMWreportageIMG/content/content_catalog-mobile1.webp" alt="Classic car">
+       			
+				<img class="catalog-cell__content catalog-cell__content--desktop" src="images/BMWreportageIMG/content/content_catalog-mobile1.webp" alt="Classic car">
+
+				<div class="catalog-cell__info catalog-cell__info--large">
+					<p class="catalog-cell__header">Classic car</p>
+					<p class="catalog-cell__preview">A big history for the small Isetta</p>
+				</div>			
+			</a>
+
+			<a href="#" class="catalog-cell">
+				<div class="catalog-cell__bg-white"></div>
+
+				<video playsinline autoplay muted loop class="catalog-cell__content catalog-cell__content--mobile">
+       				<source src="images/BMWreportageIMG/content/content-catalog-mobile2.mp4" type="video/mp4">
+       				Ваш браузер не поддерживает тег video. Пожалуйста, обновите свой браузер до более свежей версии.
+				</video>
+
+				<video playsinline autoplay muted loop class="catalog-cell__content catalog-cell__content--desktop">
+       				<source src="images/BMWreportageIMG/huge-screen-content/grid-2.mp4" type="video/mp4">
+       				Ваш браузер не поддерживает тег video. Пожалуйста, обновите свой браузер до более свежей версии.
+				</video>
+
+				<div class="catalog-cell__info catalog-cell__info--large catalog-cell__info--dark">
+					<p class="catalog-cell__header">BMW explained</p>
+					<p class="catalog-cell__preview">Engines and more: The fascinating story of the BMW name </p>
+				</div>			
+			</a>
+
+			<a href="#" class="catalog-cell">
+				<div class="catalog-cell__bg-dark"></div>
+
+				<img class="catalog-cell__content catalog-cell__content--mobile" src="images/BMWreportageIMG/content/content-catalog-mobile3.webp" alt="Classic cars">
+					
+				<img class="catalog-cell__content catalog-cell__content--desktop" src="images/BMWreportageIMG/huge-screen-content/grid-3.webp" alt="Classic cars">
+
+				<div class="catalog-cell__info catalog-cell__info--large">
+					<p class="catalog-cell__header">Classic cars</p>
+					<p class="catalog-cell__preview">The way to your perfect BMW Isetta</p>
+				</div>			
+			</a>
+		</div>
+
+		<div class="tagcloud">
+			<a href="#" class="tagcloud__tag"><span class="tagcloud__dies">#</span> Automotive Life</a>
+			<a href="#" class="tagcloud__tag"><span class="tagcloud__dies">#</span> Oldtimer</a>
+		</div>
+
+	</main>
+
+
+	<footer class="footer">
+		<div class="footer__block">
+			<nav class="lang">
+				<a class="lang__link" href="#">English</a>
+				<a class="lang__link" href="#">Belarusian</a>
+				<a class="lang__link" href="#">Deutsch</a>
+				<a class="lang__link" href="#">Elven</a>
+				<a class="lang__link" href="#">Español</a>
+			</nav>
+		</div>
+		<nav class="footer-navigation">
+			<h2 class="footer-navigation__header">Quick Links</h2>
+			<a class="footer-navigation__link" href="#">Home</a>
+			<a class="footer-navigation__link" href="#">BMW in your country</a>
+			<a class="footer-navigation__link" href="#">Careers</a>
+			<a class="footer-navigation__link" href="#">EU Detergents Regulation</a>
+			<a class="footer-navigation__link" href="#">REACH Regulation</a>
+			<a class="footer-navigation__link" href="#">Compatibility Check</a>
+			<a class="footer-navigation__link" href="#">Software Update</a>
+			<a class="footer-navigation__link" href="#">Accessories Update</a>
+		</nav>
+
+		<nav class="footer-navigation">
+			<h2 class="footer-navigation__header">More BMW Websites</h2>
+			<a class="footer-navigation__link" href="#">BMW M</a>
+			<a class="footer-navigation__link" href="#">BMW Motorsport</a>
+			<a class="footer-navigation__link" href="#">BMW Golfsport</a>
+			<a class="footer-navigation__link" href="#">BMW Yachtsport</a>
+			<a class="footer-navigation__link" href="#">BMW Mountains</a>
+			<a class="footer-navigation__link" href="#">BMW Driving Experience</a>
+			<a class="footer-navigation__link" href="#">BMW Welt</a>
+			<a class="footer-navigation__link" href="#">BMW Group Classic</a>
+			<a class="footer-navigation__link" href="#">BMW Corporate/Direct Sales</a>
+			<a class="footer-navigation__link" href="#">BMW Group</a>
+		</nav>
+
+		<nav class="footer-navigation">
+			<h2 class="footer-navigation__header">BMW.com</h2>
+			<a class="footer-navigation__link" href="#">About BMW.com</a>
+			<a class="footer-navigation__link" href="#">Contact</a>
+			<a class="footer-navigation__link" href="#">Cookies</a>
+			<a class="footer-navigation__link" href="#">Imprint</a>
+			<a class="footer-navigation__link" href="#">Legal Notice / Data protection</a>
+		</nav>
+
+		<nav class="footer-navigation">
+			<h2 class="footer-navigation__header">Visit us on</h2>
+			<a class="footer-navigation__link" href="#">Facebook</a>
+			<a class="footer-navigation__link" href="#">Twitter</a>
+			<a class="footer-navigation__link" href="#">Instagram</a>
+			<a class="footer-navigation__link" href="#">Google+</a>
+			<a class="footer-navigation__link" href="#">YouTube</a>
+		</nav>
+
+		<div class="copyright-label">© BMW AG 2019</div>
+	</footer>
+
+	<script>
+		let burgerSwitch = document.getElementById('burger');
+		burgerSwitch.addEventListener('change', function() {
+			if (this.checked)
+				document.body.style.overflow = 'hidden';
+			else
+				document.body.style.overflow = 'visible';
+		})
+	</script>
+</body>
+</html>

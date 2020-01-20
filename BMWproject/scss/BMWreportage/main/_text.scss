@@ -1,0 +1,141 @@
+.text
+{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+
+    .text__title
+    {
+        font-family: $TeaserTextFont;
+        font-size: $MainTextTitleFontSize;
+        line-height: 34px;
+
+        padding-bottom: 30px;
+
+        color: $MainFontColor;
+        .text__step
+        {
+            display: block;
+
+            width: 60px;
+            height: 4px;
+            margin-bottom: 30px;
+
+            background-color: $MainTextStepBGC;
+        }
+    }
+
+    .text__content
+    {
+        font-family: $TeaserTextFont;
+        font-size: $MainTextContentFontSize;
+        line-height: 25px;
+
+        margin-bottom: 25px;
+
+        color: $MainFontColor;
+    }
+
+    .text__bold-content
+    {
+        font-family: $TeaserTextFont;
+        font-size: $MainTextContentFontSize;
+        line-height: 25px;
+
+        display: block;
+
+        margin-top: 15px;
+        margin-bottom: 25px;
+
+        color: $MainFontColor;
+    }
+}
+
+@media(min-width: 767px)
+{
+    .text
+    {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-right: 50px;
+        padding-left: 50px;
+        .text-title
+        {
+            padding-bottom: 30px;
+            .text__step
+            {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media(min-width: 1024px)
+{
+    .text
+    {
+        display: flex;
+
+        padding-right: 90px;
+        padding-left: 100px;
+
+        flex-wrap: wrap;
+        .text__title
+        {
+            width: calc(49% - 8.33%);
+            margin-right: 8.33%;
+
+            text-align: right;
+            .text__step
+            {
+                margin-left: calc(100% - 60px);
+            }
+        }
+        .text__content
+        {
+            width: 51%;
+            margin-left: auto;
+        }
+        .text__bold-content
+        {
+            width: 51%;
+            margin-left: auto;
+        }
+    }
+}
+
+@media(min-width: 1270px)
+{
+    .text
+    {
+        width: 1080px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 0;
+        padding-left: 0;
+        .text__title
+        {
+            width: 49%;
+            margin-right: 0;
+            padding-right: 8.33%;
+        }
+
+        .text__content
+        {
+            width: 51%;
+            margin-right: 0;
+            margin-left: auto;
+        }
+
+        .text__bold-content
+        {
+            width: 51%;
+            margin-right: 0;
+            margin-left: auto;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.tagcloud
+{
+    display: flex;
+
+    width: calc(100% - 30px);
+    margin: 15px;
+
+    flex-wrap: wrap;
+    .tagcloud__tag
+    {
+        font-family: $TeaserTextFont;
+        font-size: $MainTagFontSize;
+
+        width: auto;
+        margin: 0 15px 15px 0;
+        padding: 10px 18px;
+
+        color: $MainTagFontColor;
+        background-color: #f3f3f3;
+
+        &:hover
+        {
+            background-color: #d3d3f3;
+            .tagcloud__dies
+            {
+                color: $MainTagFontColor;
+            }
+        };
+        .tagcloud__dies
+        {
+            color: $MainTagCloudDiesColor;
+        }
+    }
+}
+
+@media(min-width: 767px)
+{
+    .tagcloud
+    {
+        justify-content: center;
+    }
+}
