@@ -695,7 +695,7 @@ li {
   animation: HdrIcn 1.5s linear infinite;
   animation-delay: 1s;
   vertical-align: top;
-  border: 2px solid #fffff;
+  border: 2px solid #ffffff;
   border-radius: 15px;
 }
 .story-header .story-header__text .story-header__reading-time .story-header__rt-icon .story-header__rt-icon-more {
