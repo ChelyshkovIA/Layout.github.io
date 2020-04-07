@@ -7,7 +7,10 @@
 
 	.mobile {
 		
-
+		position: fixed;
+		z-index: 20;
+		display: block;
+		width: 100%;
 		.mobile__nav {
 			
 			display: flex;

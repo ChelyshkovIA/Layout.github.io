@@ -35,6 +35,12 @@ ul, li, ol {
   list-style-type: none;
 }
 
+.header .mobile {
+  position: fixed;
+  z-index: 20;
+  display: block;
+  width: 100%;
+}
 .header .mobile .mobile__nav {
   display: flex;
   justify-content: space-between;
@@ -117,6 +123,7 @@ ul, li, ol {
   flex-direction: column;
 }
 .main .tagline {
+  margin-top: 50px;
   position: relative;
   height: calc(100vh - 50px);
 }
