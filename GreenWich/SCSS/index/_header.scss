@@ -1,0 +1,112 @@
+
+.header {
+
+	.header__mobile {
+		
+	}
+
+	.mobile {
+		
+
+		.mobile__nav {
+			
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 55px;
+			background-color: #01C34F;
+			padding: 0 2%;
+			.mobile__logo {
+				font-size: 22px;
+				color: #fff;
+				font-family: $mainFont;
+			}
+
+			.burger {
+				cursor: pointer;
+				font-size: 25px;
+				color: #fff;
+			}
+		}
+
+		.mobile__menu {
+			
+		}
+
+		.menu {
+			display: flex;
+			flex-direction: column;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+
+			background-color: #333333;
+			padding: 20px 10px;
+			align-items: center;
+			z-index: 10;
+
+			.menu__back {
+				cursor: pointer;
+
+				position: absolute;
+				right: 10px;
+				top: 10px;
+
+				background-color: rgba(0,0,0,0);
+				outline: none;
+				border: none;
+
+				.menu__back-icon {
+					color: #fff;
+					font-size: 26px;
+				}	
+			}
+			
+			.menu__link {
+				
+			}
+
+			.link {
+				font-family: $mainFont;
+				color: #01C34F;
+				font-size: 21px;
+				margin: 5px 0;
+
+				&.link--phoneNumber {
+					margin-top: 60px;
+				}
+
+				&.link--info {
+					color: #fff;
+					font-size: 19px;
+				}
+			}
+
+			.menu__social {
+				margin: 40px 0;
+			}
+
+			.social {
+				
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				.social__icon {
+					cursor: pointer;
+					padding: 0 5px;
+					color: #01C34F;
+					font-size: 25px;
+				}
+			}
+
+			transition-property: transform;
+			transition-duration: 0.5s;
+			transition-timing-function: ease-out;
+
+			&.menu--closed {
+				transform: translateY(-100%);
+			}
+		}
+	}
+}

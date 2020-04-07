@@ -1,0 +1,38 @@
+@import "_fonts.scss";
+
+.hidden {
+	display: none;
+}	
+
+input[type="radio"]{
+	display: none;
+}
+
+input[type="checkbox"]{
+	display: none;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration:none;
+	color:#000;
+	font-size:15px; 
+}
+
+b, p, h1, h2, h3, h4, h5, h6{
+	color:#000;
+	font-size:15px;
+	font-weight: normal;
+	font-style:normal;	
+}
+
+ul, li, ol{
+	font-style:normal;
+	list-decoration:none;
+	list-style-type: none;
+}
