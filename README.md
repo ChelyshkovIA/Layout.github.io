@@ -7,7 +7,8 @@ Web developer
 
 ---
 
-Here you can find my projects (some copies of popular sites)
+Here you can find my 
+layout projects (some copies of popular sites)
 
 ## [BMW.com](https://chelyshkovia.github.io/BMWproject/BMWcom.html)
 ## [BMW.com reportage](https://chelyshkovia.github.io/BMWproject/BMWreportage.html)
