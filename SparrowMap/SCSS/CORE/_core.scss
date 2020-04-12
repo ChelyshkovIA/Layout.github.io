@@ -1,0 +1,51 @@
+.hidden {
+	display: none;
+}
+
+// .closed {
+// 	transform: translateX(100%);
+// }
+
+input[type="radio"]{
+	display: none;
+}
+
+input[type="checkbox"]{
+	display: none;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration:none;
+	color:#000;
+	font-size:15px; 
+}
+
+b, p, h1, h2, h3, h4, h5, h6{
+	color:#000;
+	font-size:15px;
+	font-weight: normal;
+	font-style:normal;	
+}
+
+ul, li{
+	padding: 0px;
+	margin: 0px;
+	font-style:normal;
+	list-decoration:none;
+}
+ol, li{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+
+li{
+	padding: 0px;
+	margin: 0px;
+}

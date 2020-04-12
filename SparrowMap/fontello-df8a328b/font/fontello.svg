@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2020 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="gmail" unicode="&#xe800;" d="M0-97l0 897 185 0 9-8 825 0 9 8 174 0 0-900-171 0 0 7-855 0 0-4-176 0z m176 132l0-80 855 0 0 74-345 259-79-65-86 70z m0 60l307 229-307 252 0-481z m83 641l348-298 347 298-695 0z m465-417l307-230 0 484z" horiz-adv-x="1202" />
+
+<glyph glyph-name="yandex-rect" unicode="&#xf306;" d="M177 850c-98 0-177-79-177-177l0-646c0-98 79-177 177-177l475 0 348 500-348 500-475 0z m266-183l113 0c7 0 11-2 11-8l0-622c0-4-2-7-8-7l-61 0c-4 0-7 3-7 6l0 230-50 0-137-230c-2-4-6-6-12-6l-71 0c-7 0-12 6-7 14l151 234c-81 31-127 93-127 177 0 140 94 212 205 212z m-3-54c-60 0-119-43-119-150 0-102 63-142 128-142l42 0 0 292-51 0z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

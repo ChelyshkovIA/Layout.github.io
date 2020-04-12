@@ -1,0 +1,42 @@
+.footer {
+	display: block;
+	background-color: #000;
+	.footer__nav {
+		
+	}
+
+	.nav {
+		max-width: 1500px;
+		margin: 0 auto;
+		.nav__ul {
+			padding-bottom: 30px;
+		}
+
+		.ul {
+			
+			display: flex;
+			flex-wrap: wrap;
+
+			.ul__li {
+
+			}
+
+			.li {
+				
+				.li__link {
+					padding: 10px 10px;
+				}	
+
+				.link {
+					display: inline-block;	
+					color: #fff;
+					font-family: 'Josefin Sans', sans-serif;
+					font-size: 17px;
+					.icon {
+
+					}
+				}
+			}
+		}
+	}
+}
