@@ -1,0 +1,23 @@
+[
+  {
+    "idCinema": "1",
+    "Title": "Октябрь",
+    "City": "Минск",
+    "Address": "пр. Независимости 73",
+    "HallsNumber": "1"
+  },
+  {
+    "idCinema": "2",
+    "Title": "Родина",
+    "City": "Молодечно ",
+    "Address": "ул. Притыцкого 19",
+    "HallsNumber": "2"
+  },
+  {
+    "idCinema": "3",
+    "Title": "SilverScreen",
+    "City": "Минск",
+    "Address": "ул. Петра Мстиславца 11",
+    "HallsNumber": "4"
+  }
+]

@@ -1,0 +1,27 @@
+.header {
+	background-color: #000;
+	.header__logo{
+		height: 170px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 8vw;
+		color: #fff;
+		background-color: #000;
+		font-family: 'Molle', cursive;
+		max-width: 450px;
+		span{
+			color: #2A96F0;
+		}
+	}
+}
+
+@media(min-width: 450px) {
+	.header{ 
+		.header__logo {
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 36px;
+		}
+	}
+}

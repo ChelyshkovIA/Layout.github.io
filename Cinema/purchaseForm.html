@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>purchase form</title>
+	<link rel="stylesheet" type="text/css" href="css/purchaseForm.css">
+	<link href="https://fonts.googleapis.com/css?family=Molle:400i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="fontello-281a0e8d/css/fontello.css">
+	<script src="js/purchaseForm.js"></script>
+
+</head>
+<body>
+	<header class="header">
+		<h1 class="header__logo"><span>C</span>helyshkoff &nbsp;<span>C</span>inema</h1>
+	</header>
+
+	<main class="main">
+		<div class="main__film-info film-info">
+			
+			<div class="film-info__img-block img-block">
+				<img class="img-block__img img" src="" alt="">
+				<div class="img-bg"></div>
+			</div>
+
+			<div class="film-info__text text-block">
+				<p class="text-block__par text-block__par--film"></p>
+				<p class="text-block__par text-block__par--limitation"></p>
+				<p class="text-block__par text-block__par--country"></p>
+				<p class="text-block__par text-block__par--genre"></p>
+				<p class="text-block__par text-block__par--description"></p>
+				<a class="text-block__par text-block__par--trailerLink" href="#">Ссылка на трейлер</a>
+			</div>
+		</div>
+
+		<form class="main__film-options film-options" action="http://cinema/seats.html" name="film-options" method="GET">
+			<label class="film-options__label film-label">
+				<span class="film-label__item">Ваш город: </span>
+				<select class="film-label__select select select--city" required>
+					<option class="select__option option" value="" selected></option>
+				</select>
+			</label>
+
+			<label class="film-options__label film-label">
+				<span class="film-label__item">Кинотеатр: </span>
+				<select class="film-label__select select select--cinema" required>
+					<option class="select__option option" value="" selected></option>
+				</select>
+			</label>
+
+			<label class="film-options__label film-label">
+				<span class="film-label__item">Дата сеанса: </span>
+				<select class="film-label__select select select--date" required>
+					<option class="select__option option" value="" selected></option>
+				</select>
+			</label>
+
+			<label class="film-options__label film-label">
+				<span class="film-label__item">Сеанс: </span>
+				<select class="film-label__select select select--sessions" name="idSessions" required>
+					<option class="select__option option" value="" selected></option>
+				</select>
+			</label>
+			
+			<input class="film-options__button" type="submit" value="Готово">
+			
+		</form>
+	</main>
+</body>
+</html>

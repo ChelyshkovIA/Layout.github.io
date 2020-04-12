@@ -1,0 +1,125 @@
+.hidden {
+	display: none;
+}
+.main{
+	background-color: #0C151A;
+	.main__tickets-block{
+		padding-top: 30px;
+		padding-bottom: 40px;
+		padding-left: 10px;
+		padding-right: 10px;
+		.main__tickets-active{
+			padding-top: 30px;
+			padding-bottom: 30px;
+			font-family: 'PT Sans Narrow', sans-serif;
+			color: #2a96f0;
+			font-size: 10vw;
+			text-align: left;
+		}
+
+		.main__about-tickets{
+			font-family: 'PT Sans Narrow', sans-serif;
+			color: #ccc;
+			font-size: 5vw;
+			text-align: left;
+		}
+
+		.ticket {
+			width: 100%;
+			background-color: #fff;
+			margin-top: 30px;
+			display: flex;
+			flex-wrap: wrap;
+
+			border: 2px solid #2a96f0;
+			border-radius: 6px;
+
+
+			.ticket__text-info {
+
+			}
+
+			.text-info {
+				padding: 2%;
+
+
+				.text-info__item {
+					font-family:  'PT Sans Narrow', sans-serif;
+					font-weight: bold;
+					font-size: 6vw;
+				}
+
+				.text-info__warning {
+					margin-top: 20px;
+					margin-bottom: 20px;
+					font-family:  'PT Sans Narrow', sans-serif;
+					color: #F0900E;	
+					font-weight: bold;
+					font-size: 6vw;
+				}
+			}
+
+			.qr-block {
+				width: 65vw;
+				height: 65vw;
+
+				max-width: 230px;
+				max-height: 230px;
+				margin: 0 auto;
+				padding: 4%;
+
+			
+				.qr-block__qr {
+				}
+
+				.qr {		
+					width: 100%;
+					height: 100%;
+
+					// max-width: 218px;
+					// max-height: 218px;
+					background-color: #2a96f0;
+				}
+			}
+		}
+	}
+}
+
+
+@media(min-width: 360px) {
+	.main {
+		.main__tickets-block {
+			.ticket {
+				.text-info {
+					.text-info__item {
+						font-size: 21px
+					}
+
+					.text-info__warning {
+						font-size: 24px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media(min-width: 720px){
+	.main{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.main__tickets-block{
+			width: 720;
+			.main__tickets-active{
+				font-size:72px;
+			}
+
+			.main__about-tickets{
+				font-size: 36px;
+			}
+
+		}
+	}
+}

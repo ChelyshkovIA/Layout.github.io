@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>editFilm</title>
+	<link rel="stylesheet" type="text/css" href="css/editFilms.css">
+	<link rel="stylesheet" type="text/css" href="fontello-281a0e8d/css/fontello.css">
+	<link rel="stylesheet" type="text/css" href="fontello-47fee67f/css/fontello.css">
+	<link href="https://fonts.googleapis.com/css?family=Molle:400i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+	<script src="js/editFilm.js?nocache=123"></script>
+	<script src="js/editPoster.js"></script>
+</head>
+<body style="background-color: #000">
+	<header class="header">
+		<h1 class="header__logo"><span>C</span>helyshkoff &nbsp;<span>C</span>inema</h1>
+	</header>
+
+	<main class="main">
+		<div class="bg-dark"></div>
+		
+		<form class="film-info film-info--left" enctype="multipart/form-data" method="POST" action="PHP/editPoster.php" class="hidden">
+			<div class="film-info__img-block">
+				<div class="film-info__img-bg"></div>
+				<img class="film-info__img" src="posterImages/достучаться_до_небес.jpg" alt="">
+				<label class="film-info__img-block-bg film-info__img-block-bg--hidden" for="filmPoster">Загрузить</label>
+
+				<input class="hidden" type="file" name="poster" id="filmPoster">
+			</div>
+		</form>
+		
+		<form class="film-info film-info--right" method="post" action="php/editFilm.php" enctype="multipart/form-data">
+
+			<div class="film-info__block">	
+				<label class="film-info__label">
+					<span class="film-info__label-text">Название фильма: </span>
+					<input class="film-info__text" type="text" name="title" required>
+				</label>
+				
+				<label class="film-info__label">
+					<span class="film-info__label-text">Страна: </span>
+					<input class="film-info__text" type="text" name="country" required>
+				</label>
+				
+				<label class="film-info__label">
+					<span class="film-info__label-text">Жанр: </span>
+					<input class="film-info__text" type="text" name="genre" required>
+				</label>
+				
+				<label class="film-info__label">
+					<span class="film-info__label-text">Ограничение: </span>
+					<input class="film-info__text" type="text" name="limitation" required>
+				</label>
+				
+				<label class="film-info__label">
+					<span class="film-info__label-text">Описание: </span>
+					<textarea rows="5" class="film-info__text film-info__text--textarea" type="text" name="description"></textarea required>
+				</label>
+				
+				<label class="film-info__label">
+					<span class="film-info__label-text">Ссылка на трейлер: </span>
+					<input class="film-info__text" type="text" name="trailerLink" required>
+				</label>
+			</div>	
+
+			<input type="radio" name="editRadio" value="delete" id="deleteRadio">
+			<input type="radio" name="editRadio" value="update" id="updateRadio">
+			<input class="hidden" type="text" name="idFilms" id="idFilms">
+		</form>
+
+		<div class="film-info__instruments">
+			<input class="film-info__instrument-button film-info__instrument-button--red" type="submit" value="удалить фильм">
+			<input class="film-info__instrument-button film-info__instrument-button--blue" type="button" value="редактировать">
+			<input class="film-info__instrument-button film-info__instrument-button--green" type="button" value="сохранить">
+
+		</div>
+	</main>
+</body>
+</html>

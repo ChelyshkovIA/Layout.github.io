@@ -1,0 +1,231 @@
+#burger {
+  display: none;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+}
+
+b, p, h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+ul, li {
+  font-style: normal;
+  list-decoration: none;
+}
+
+ol, li {
+  padding-left: 25px;
+}
+
+li {
+  padding-left: 10px;
+}
+
+body {
+  background-color: #000;
+}
+body .hidden {
+  display: none;
+}
+
+.header .header__logo {
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8vw;
+  color: #fff;
+  background-color: #000;
+  font-family: "Molle", cursive;
+}
+.header .header__logo span {
+  color: #2A96F0;
+}
+
+@media (min-width: 490px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 470px;
+  }
+  .header .header__logo {
+    font-size: 37px;
+  }
+}
+.main {
+  background-color: #000;
+}
+.main .film-info {
+  display: flex;
+  flex-direction: column;
+}
+.main .film-info .img-block {
+  position: relative;
+  width: 100%;
+  height: 120vw;
+}
+.main .film-info .img-block .img-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(black, rgba(0, 0, 0, 0));
+}
+.main .film-info .img-block .img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  background-color: #2a96f0;
+}
+.main .film-info .text-block {
+  width: 100%;
+  padding: 6% 3%;
+}
+.main .film-info .text-block .text-block__par {
+  display: block;
+  padding: 10px 15px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  min-height: 20px;
+  margin-bottom: 35px;
+  background-color: #fff;
+  font-size: 17px;
+  color: #2a96f0;
+  font-weight: bold;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  word-wrap: break-word;
+}
+.main .film-info .text-block .text-block__par.text-block__par--trailerLink {
+  color: #112282;
+  text-decoration-line: underline;
+}
+.main .main__film-options {
+  margin-top: 50px;
+}
+.main .film-options {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px 30px 10px;
+}
+.main .film-options .film-label {
+  display: flex;
+  flex-direction: column;
+}
+.main .film-options .film-label .film-label__item {
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 17px;
+  color: #2a96f0;
+  padding: 10px 0;
+}
+.main .film-options .film-label .select {
+  height: 30px;
+  font-size: 17px;
+  color: #000;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  border-radius: 15px;
+  outline: none;
+  cursor: pointer;
+}
+.main .film-options .film-label .select .option {
+  max-heignt: none;
+  cursor: pointer;
+}
+.main .film-options .film-options__button {
+  outline: none;
+  margin: 25px 0 0 auto;
+  height: 40px;
+  width: 150px;
+  font-size: 17px;
+  color: #fff;
+  font-family: "PT Sans Narrow", sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  background-color: #2A96F0;
+  border-radius: 20px;
+  cursor: pointer;
+  transition-property: background-color, color;
+  transition-delay: 0.2s;
+  transition-duration: 0.4s;
+  transition-timing-function: linear;
+}
+.main .film-options .film-options__button:hover {
+  background-color: #333;
+  color: #2a96f0;
+}
+
+@media (min-width: 490px) {
+  .main {
+    width: 470px;
+    margin: 0 auto;
+  }
+  .main .film-info .img-block {
+    width: 100%;
+    height: 530px;
+  }
+  .main .film-info .img-block .img-bg {
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0), black);
+  }
+}
+@media (min-width: 850px) {
+  .main {
+    width: 100%;
+  }
+  .main .film-info {
+    flex-direction: row;
+  }
+  .main .film-info .img-block {
+    padding: 0 3%;
+    width: 35%;
+    height: 43vw;
+  }
+  .main .film-info .text-block {
+    padding-top: 0;
+    width: 65%;
+  }
+}
+@media (min-width: 880px) {
+  .main {
+    width: 860px;
+    margin: 0 auto;
+  }
+  .main .film-info .img-block {
+    width: 340px;
+    height: 380px;
+  }
+  .main .film-info .img-block .img-bg {
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0), black);
+  }
+}
+
+/*# sourceMappingURL=purchaseForm.css.map */

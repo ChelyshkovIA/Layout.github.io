@@ -1,0 +1,178 @@
+#burger {
+  display: none;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+}
+
+b, p, h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+ul, li {
+  font-style: normal;
+  list-decoration: none;
+}
+
+ol, li {
+  padding-left: 25px;
+}
+
+li {
+  padding-left: 10px;
+}
+
+.header .header__logo {
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8vw;
+  color: #fff;
+  background-color: #000;
+  font-family: "Molle", cursive;
+}
+.header .header__logo span {
+  color: #2A96F0;
+}
+.header .header__title {
+  height: 35vw;
+  background-color: #000000;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 12vw;
+  line-height: 35vw;
+  color: #ccc;
+  padding: 0 2%;
+  text-align: center;
+}
+
+@media (min-width: 500px) {
+  .header {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header .header__logo {
+    font-size: 40px;
+  }
+  .header .header__title {
+    height: 175px;
+    font-size: 55px;
+    line-height: 175px;
+  }
+}
+.main {
+  margin-bottom: 50px;
+}
+.main .choose {
+  background-color: #000;
+}
+.main .choose .choose__session {
+  background-color: #000;
+  padding-bottom: 10px;
+  margin: 30px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #2a96f0;
+}
+.main .choose .choose__session:first-child {
+  border-top: 2px solid #2a96f0;
+  padding-top: 30px;
+}
+.main .choose .choose__session .choose-item {
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 17px;
+}
+.main .choose .choose__session .choose-item.choose-item--default {
+  display: none;
+}
+.main .choose .choose__session .choose-item .choose__check {
+  display: block;
+  margin-left: auto;
+  height: 22px;
+  width: 22px;
+  transform: scale(0.001);
+  border-radius: 11px;
+  background-color: #000;
+  transition-property: background-color, transform;
+  transition-timing-function: linear;
+  transition-duration: 0.3s;
+}
+.main .choose .choose__session .choose-item .choose-session-item:checked ~ .choose__check {
+  transform: scale(2);
+  background-color: #2a96f0;
+}
+.main .choose .choose__session .choose-item .choose-session-item:checked ~ .session-title {
+  color: #2a96f0;
+}
+.main .choose .choose__link {
+  cursor: pointer;
+  margin-top: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000;
+  border: 2px solid #2a96f0;
+  outline: none;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 35px;
+  border-radius: 20px;
+  transition-property: background-color;
+  transition-delay: 0.1s;
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
+}
+.main .choose .choose__link a {
+  color: #2a96f0;
+  font-size: 20px;
+  font-family: "PT Sans Narrow", sans-serif;
+  transition-property: color;
+  transition-delay: 0.1s;
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
+}
+.main .choose .choose__link:hover {
+  background-color: #2a96f0;
+}
+.main .choose .choose__link:hover a {
+  color: #fff;
+}
+
+@media (min-width: 500px) {
+  .main {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*# sourceMappingURL=addTicket.css.map */

@@ -1,0 +1,33 @@
+body {
+	.hidden {
+		display: none;
+	}
+	background-color: #000;
+}
+.header {
+	.header__logo{
+		height: 170px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 8vw;
+		color: #fff;
+		background-color: #000;
+		font-family: 'Molle', cursive;
+		span{
+			color: #2A96F0;
+		}
+	}
+}
+
+@media(min-width: 490px) {
+	.header {
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+		width: 470px;
+		.header__logo {
+			font-size: 37px;
+		}
+	}
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SEATS</title>
+	<link rel="stylesheet" type="text/css" href="css/seats.css">
+	<link href="https://fonts.googleapis.com/css?family=Molle:400i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="fontello-281a0e8d/css/fontello.css">
+	<script src="js/seats.js"></script>
+</head>
+<body>
+	<header class="header">
+		<h1 class="header__logo"><span>C</span>helyshkoff &nbsp;<span>C</span>inema</h1>
+	</header>
+
+	<main class="main">
+		
+		<div class="film-info">
+
+			<div class="film-info__poster">	
+				<div class="film-title"></div>
+				<img src="" alt="постер фильма" class="film-info__image">
+				<div class="film-info__title"></div>
+			</div>
+
+			<div class="film-info__more">
+				<div class="film-info__more-item film-info__more-item--cinema">Кинотеатр: </div>
+				<div class="film-info__more-item film-info__more-item--date">Дата: </div>
+				<div class="film-info__more-item film-info__more-item--format">Формат: </div>
+			</div>
+
+		</div>
+
+		<div class="hall-seats">
+			<form class="hall-seats__form" action="#" method="get" accept-charset="utf-8">
+				
+				<div class="screen">Экран</div>
+					
+				<div class="hall"></div>	
+
+				<div class="ticket-price">
+					<div class="price-info">Общая стоимость: <span class="cost">0</span> руб.</div>
+					<div class="unit-info__title"><span class="unit-info__item"></span> - Свободное место</div>
+					<div class="unit-info__title"><span class="unit-info__item unit-info__item--active"></span> - Занятое место</div>
+				</div>
+
+				<input class="hall-seats__submit" type="button" value="Купить билет">
+			</form>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<nav class="social-nav">
+			<a class="social-nav__link" href="#"><span class="footer-link-icon footer-link-icon--lightblue icon-twitter"></span></a>
+			<a class="social-nav__link" href="#"><span class="footer-link-icon footer-link-icon--blue icon-vkontakte"></span></a>
+			<a class="social-nav__link" href="#"><span class="footer-link-icon footer-link-icon--red icon-instagram"></span></a>
+			<a class="social-nav__link" href="#"><span class="footer-link-icon footer-link-icon--blue icon-facebook"></span></a>
+		</nav>
+
+		<a class="footer__tel" href="tel: +375291425865">+375 29 142 58 65</a>
+
+		<div class="copyright">(c) CHELYSHKOFF MOVIE</div>
+	</footer>	
+</body>
+</html>

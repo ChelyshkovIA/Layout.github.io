@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>edit</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/editFilms.css">
+	<link rel="stylesheet" type="text/css" href="fontello-281a0e8d/css/fontello.css">
+	<link rel="stylesheet" type="text/css" href="fontello-47fee67f/css/fontello.css">
+	<link href="https://fonts.googleapis.com/css?family=Molle:400i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+	<script src="js/edit.js"></script>
+</head>
+<body style="background-color: #000">
+	<header class="header">
+		<h1 class="header__logo"><span>C</span>helyshkoff &nbsp;<span>C</span>inema</h1>
+	</header>
+
+	<main class="main">
+		<div class="bg-dark"></div>
+
+		<form action="#" class="film-info film-info--right" enctype="multipart/form-data" method="post">
+			<div class="film-info__block">
+				
+			</div>
+			<input type="radio" name="editRadio" value="delete" id="deleteRadio">
+			<input type="radio" name="editRadio" value="update" id="updateRadio">
+			<input class="hidden" type="text" name="" id="id">
+		</form>
+
+		<div class="film-info__instruments">
+			<input class="film-info__instrument-button film-info__instrument-button--red" type="button" value="удалить">
+			<input class="film-info__instrument-button film-info__instrument-button--blue" type="button" value="редактировать">
+			<input class="film-info__instrument-button film-info__instrument-button--green hidden" type="button" value="сохранить">
+		</div>
+	</main>
+</body>
+</html>

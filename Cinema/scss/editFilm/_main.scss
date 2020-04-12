@@ -1,0 +1,261 @@
+.hidden {
+	display: none;
+}
+
+.main {
+	position: relative;
+	background-color: #0C151A;
+	.bg-dark {
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		height: 30vw;
+		width: 100%;
+		background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+		max-width: 450px;
+		display: block;
+		left: 0;
+		right: 0;
+	}
+	.film-info {
+		display: flex;
+		flex-direction: column;
+		max-width: 450px;
+		.film-info__img-block {
+			width: 100%;
+			height: 130vw;
+			position: relative;
+			overflow: hidden;
+			.film-info__img-bg {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				z-index: 2;
+				background: radial-gradient(circle, rgba(0,0,0,0) 25%, rgba(20,20,20,1) 100%);
+			}
+			.film-info__img {
+				object-fit: cover;
+				width: 100%;
+				height: 100%; 
+				background-color: #000;
+			}
+
+			.film-info__img-block-bg {
+				cursor: pointer;
+				position: absolute;
+				z-index: 5;
+				bottom: 0;
+				width: 100%;
+				background-color: rgba(0,0,0,0.6);
+				height: 60%;
+				transform: translateY(100%);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: rgba(20, 120, 255, 0.8);
+				font-size: 30px;
+				font-weight: bold;
+				font-family: 'PT Sans Narrow', sans-serif;
+				transition-property: transform;
+				transition-duration: 0.25s;
+				transition-timing-function: linear;
+				&.film-info__img-block-bg--hidden {
+					display: none;
+				}
+
+			}
+			&:hover {
+				.film-info__img-block-bg {
+					transform: translateY(0%);
+				}
+			}
+		}
+		
+		.film-info__block {
+			display: flex;
+			flex-direction: column;
+			.film-info__label {
+				display: flex;
+				justify-content: space-between;
+				flex-direction: column; 
+				margin-top: 22px;
+				&.film-info__label--hidden {
+					display: none;
+				}
+				.film-info__label-text {
+					font-family: 'PT Sans Narrow', sans-serif;
+					color: #2a96f0;
+					font-size: 20px;
+					padding: 5px 10px;
+
+				}
+
+				.film-info__text {
+					margin: 0 10px;
+					background-color: rgba(0,0,0,0);
+					height: 27px;
+					border: none;
+					border-bottom: 1px solid #2a96f0;
+					color: #fff;
+					font-family: 'PT Sans Narrow', sans-serif;
+					font-size: 20px;
+					outline: none;
+					padding: 0 10px;
+					&:active {
+						background-color: rgba(0,0,0,0);
+					}
+					&:focus {
+						color: #000;
+						background-color: rgba(200,200,200);
+					}
+
+					&.film-info__text--hidden {
+						display: none;
+					}
+
+					&.film-info__text--textarea {
+						height: auto;
+						resize: none;
+					}
+				}
+			}
+		}
+		
+	}
+
+
+	.film-info__instruments {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: left;
+		padding: 15px;
+		.film-info__instrument-button {
+			cursor: pointer;
+			margin-top: 10px;
+			width: 100%;
+			border:none;
+
+			width: 100%;
+			height: 30px;
+			border-radius: 6px;
+
+			&:first-child {
+				margin-top: 20px;
+			}
+
+			font-size: 18px;
+			outline: none; 
+			&.film-info__instrument-button--red {
+				background-image: linear-gradient(#EA5261,#D8454D);
+				color: rgba(255,255,255,0.6);
+				&:hover {
+					background-image: linear-gradient(#aA2221,#98151D)
+				}
+			}
+
+			&.film-info__instrument-button--green {
+				background-image: linear-gradient(#679236,#86C152);
+				color: rgba(255,255,255,0.6);
+				&:hover {
+					background-image: linear-gradient(#378216,#56a122)
+				}	
+			}
+
+			&.film-info__instrument-button--blue {
+				background-image: linear-gradient(#1D81a8,#3DB2D9);
+				color: rgba(255,255,255,0.6);
+				&:hover {
+					background-image: linear-gradient(#125188,#1D82a9)
+				}	
+			}
+		}		
+	}
+
+}
+
+@media(min-width: 450px) {
+	.bg-dark, .film-info {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.main {
+		background-color: #000;
+		.bg-dark {
+			height: 110px;
+		}
+		.film-info {
+			.film-info__img-block {
+				height: 580px;
+			}
+		}
+	}
+}
+
+@media(min-width: 900px) {
+	.main {
+		width: 100%;
+
+		.bg-dark {
+			display: none;
+		}
+
+		.film-info {
+			max-width: 100%;	
+			display: inline-flex;
+			vertical-align: top;
+			flex-direction: row;
+			flex-wrap: wrap;
+			&.film-info--left {
+				padding-left: 30px;
+				width: 30%;
+			}
+
+			&.film-info--right {
+				width: 65%;
+			}
+
+			.film-info__img-block {
+				height: 45vw;
+				max-height: 613px;
+				width: 25vw;
+				max-width: 370px;
+				
+				.film-info__img {
+					// margin-right: 30px;
+				}
+			}
+			
+			.film-info__block {
+				width: 100%;
+				.film-info__label {
+					margin-bottom: 30px;
+					margin-top: 0px;
+					padding-top: 0;
+					padding-right: 0;
+					max-width: 800px;
+					.film-info__label-text {
+						padding-top: 0;
+					}
+				}
+			}
+
+
+		}
+		.film-info__instruments {
+			margin-top: 40px;
+			flex-direction: row;
+			align-items: center;
+			.film-info__instrument-button {
+				width: 200px;
+				margin: 10px;
+				&:first-child {
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+}

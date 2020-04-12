@@ -1,0 +1,43 @@
+.main{
+	background-color: #0C151A;
+	.main__tickets-block{
+		padding-top: 30px;
+		padding-bottom: 40px;
+		padding-left: 10px;
+		padding-right: 10px;
+		.main__tickets-active{
+			padding-top: 30px;
+			padding-bottom: 30px;
+			font-family: 'PT Sans Narrow', sans-serif;
+			color: #2a96f0;
+			font-size: 10vw;
+			text-align: left;
+		}
+
+		.main__about-tickets{
+			font-family: 'PT Sans Narrow', sans-serif;
+			color: #ccc;
+			font-size: 5vw;
+			text-align: left;
+		}
+	}
+}
+
+
+@media(min-width: 1050px){
+	.main{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.main__tickets-block{
+			width: 1030px;
+			.main__tickets-active{
+				font-size:100px;
+			}
+
+			.main__about-tickets{
+				font-size: 52px;
+			}
+		}
+	}
+}
