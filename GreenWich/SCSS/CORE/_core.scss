@@ -1,5 +1,8 @@
 @import "_fonts.scss";
 
+.overflowHidden {
+	overflow: hidden;
+} 
 .hidden {
 	display: none;
 }	
@@ -35,4 +38,8 @@ ul, li, ol{
 	font-style:normal;
 	list-decoration:none;
 	list-style-type: none;
+}
+
+.blured {
+	filter: blur(5px);
 }
