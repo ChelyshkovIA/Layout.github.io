@@ -56,6 +56,7 @@ ul, li, ol{
 	margin: 20px;
 	object-fit: cover;
 	width: calc(100% - 40px);
+	max-width: 278px;
 	border: 2px solid #E4E4E4;
 	border-radius: 3px;
 }
@@ -92,10 +93,15 @@ ul, li, ol{
 }
 
 .about-list {
+	/*padding: 20px;*/
 	margin: 40px 0;
+}
+.about-list--huge {
+	display: none;
 }
 
 .about-item {
+	cursor: pointer;
 	font-family: 'Oswald', sans-serif;
 	font-size: 17px;
 	color: #787B7F;
@@ -136,6 +142,8 @@ ul, li, ol{
 }
 
 .main-title {
+	width: 100%;
+	text-align: center;
 	margin: 40px 0 60px 0;
 	font-family: 'Oswald', sans-serif;
 	font-size: 35px;
@@ -259,4 +267,62 @@ ul, li, ol{
 
 .project-link {
 	color: #777;
+}
+
+.project-link:hover {
+	color: #000;
+}
+
+/* MIN-WIDTH 600PX */
+
+@media(min-width: 690px) {
+	.title {
+		font-size: 40px;
+	}
+
+	.title-job {
+		font-size: 25px;
+	}
+
+	.photo-block {
+		width: 40%;
+	}
+
+	.info-block {
+		width: 60%;
+	}
+
+	.about-list--small {
+		display: none;
+	}
+
+	.about-list--huge {
+		margin: 0;
+		display: block;
+		padding: 20px
+	}
+
+	.main {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.education-block {
+		width: calc(50% - 40px);
+		height: 330px;
+	}
+	
+	.skills-block {
+		padding-bottom: 20px;
+		display: flex;
+	}
+
+	.prof-skills {
+		margin: 0 20px;
+		width: calc(50% - 40px);
+	}
+
+	.prof-skills--projects {
+		width: 100%;
+	}
 }
