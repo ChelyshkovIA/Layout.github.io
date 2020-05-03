@@ -1,0 +1,15 @@
+
+.icon-location-outline:before { content: '\e800'; } /* '' */
+.icon-location:before { content: '\e801'; } /* '' */
+.icon-phone:before { content: '\e802'; } /* '' */
+.icon-phone-outline:before { content: '\e803'; } /* '' */
+.icon-briefcase:before { content: '\e804'; } /* '' */
+.icon-pencil:before { content: '\e805'; } /* '' */
+.icon-mail:before { content: '\e806'; } /* '' */
+.icon-ok:before { content: '\e807'; } /* '' */
+.icon-github-circled:before { content: '\f09b'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
+.icon-vkontakte:before { content: '\f189'; } /* '' */
+.icon-pagelines:before { content: '\f18c'; } /* '' */
+.icon-bank:before { content: '\f19c'; } /* '' */
+.icon-comment:before { content: '\f4ac'; } /* '' */
