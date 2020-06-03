@@ -61,7 +61,7 @@
 			padding: 10px;
 			font-family: $mainFont;
 			font-size: 40px;
-			color: #01f330;
+			color: $mainColor;
 
 			max-width: 600px;
 		}
@@ -86,7 +86,7 @@
 
 			.title {
 				font-family: $mainFont;
-				color: #01f330;
+				color: $menuFontIndex;
 				font-size: 25px;
 			}
 

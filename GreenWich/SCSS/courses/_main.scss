@@ -60,7 +60,7 @@
                 right: 0;
                 margin: 0 auto;
 
-                background-color: #01C34F;
+                background-color: $mainColor;
                 color: #fff;
                 text-align: center;
                 font-size: 16px;
@@ -89,7 +89,7 @@
                 text-align: center;
                 margin: 10px 0;
                 font-family: $mainFont;
-                color: #01c34f;
+                color: $mainColor;
                 font-size: 30px;
 
                 transition-property: font-size;
