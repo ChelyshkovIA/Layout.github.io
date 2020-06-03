@@ -1,0 +1,169 @@
+.overflowHidden {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+}
+
+b, p, h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+ul, li, ol {
+  font-style: normal;
+  list-decoration: none;
+  list-style-type: none;
+}
+
+.blured {
+  filter: blur(5px);
+}
+
+.header .breads {
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #01C34F;
+  padding: 0 10px;
+}
+.header .breads .logo {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #fff;
+  font-size: 20px;
+}
+.header .breads .go-back-link {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #fff;
+  font-size: 20px;
+}
+
+.main .title {
+  padding: 80px 0;
+}
+.main .title .title__text {
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #aaa;
+  font-size: 30px;
+}
+.main .courses-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main .courses-block .item {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  width: 90%;
+  margin: 30px 0;
+  padding: 40px 10px 35px 10px;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.2);
+  transition-property: box-shadow;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.main .courses-block .item:hover {
+  box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.2);
+}
+.main .courses-block .item:hover .read-more {
+  font-size: 35px;
+}
+.main .courses-block .item .item__bg {
+  position: absolute;
+}
+.main .courses-block .item .item__title {
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #01C34F;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Montserrat Alternates", sans-serif;
+  line-height: 40px;
+}
+.main .courses-block .item .content {
+  text-indent: 15px;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #666;
+  font-size: 16px;
+}
+.main .courses-block .item .read-more {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin: 10px 0;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #01c34f;
+  font-size: 30px;
+  transition-property: font-size;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.main .courses-block .item .read-more span {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  .main .title {
+    padding: 100px 0;
+  }
+  .main .title .title__text {
+    font-size: 60px;
+  }
+  .main .courses-block {
+    justify-content: space-around;
+  }
+  .main .courses-block .item {
+    width: 45%;
+    margin-bottom: 80px;
+  }
+}
+@media (min-width: 975px) {
+  .main .courses-block {
+    width: 950px;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+  .main .courses-block .item {
+    width: 31%;
+  }
+}
+
+/*# sourceMappingURL=courses.css.map */

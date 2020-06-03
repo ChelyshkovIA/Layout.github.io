@@ -1,0 +1,36 @@
+.header {
+    
+    .header__breads {
+        
+    }
+
+    .breads {
+        height: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        background-color: #01C34F;
+        padding: 0 10px;
+        .breads__logo {
+
+        }
+
+        .logo {
+            font-family: $mainFont;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .breads__go-back-link {
+
+        }
+
+        .go-back-link {
+            font-family: $mainFont;
+            color: #fff;
+            font-size: 20px;
+        }
+    }
+}
