@@ -18,6 +18,6 @@ layout projects (some copies of popular sites)
 ## [BMW.com the2](https://chelyshkovia.github.io/BMWproject/BMWthe2.html)
 
 * Here you can see [code](https://github.com/ChelyshkovIA/ChelyshkovIA.github.io/tree/master/BMWproject)
-
+---
 
 
