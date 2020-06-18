@@ -23,27 +23,83 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+
+        .courses-block__bg {
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+            left: 0;
+            position: fixed;
+            z-index: -1;
+            transition-property: bakcground-color;
+            transition-duration: 0.5s;
+            transition-timing-function: linear;
+            background-color: rgba(255,255,255,0.0);
+
+            &.courses-block__bg--active {
+                z-index: 6; 
+                transition-property: background-color;
+                transition-duration: 0.5s;
+                transition-timing-function: linear;
+                background-color: rgba(0,0,0,0.5);
+            }
+
+            &.courses-block__bg--dying {
+                background-color: rgba(0,0,0,0);
+                transition-property: background-color;
+                transition-duration: 0.5s;
+                transition-timing-function: linear;
+            }
+        }
+
         .courses-block__item {
 
         }
 
         .item {
-            cursor: pointer;
-            display: inline-block;
             position: relative;
+            z-index: 5;
+            transition: box-shadow 0.2s linear;    
+            
+            cursor: pointer;
+            display: inline-flex;
+            flex-direction: column;
             width: 90%;
             margin: 30px 0;
-            padding: 40px 10px 35px 10px;
+            padding: 60px 10px 10px 10px;
             box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2);
+        
+            &.huge-item {
+                position: fixed;
+                max-height: calc(100vh - 80px);
+                width: 90%;
+                max-width: 700px;
+                top: 40px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                background-color: #fff;
+                z-index: 7;
+                transition: box-shadow 0.2s linear;    
+                
+                .read-more {
+                    margin-top: 10px;
+                    span {
+                        color: red;
+                        transform: rotate(45deg);
+                    }
+                }
 
-            transition-property: box-shadow;
-            transition-duration: 0.2s;
-            transition-timing-function: linear;
+                .content {
+                    white-space: pre-wrap;
+                    overflow: auto;
+                }
+            }
 
             &:hover {
                 box-shadow: 0px 0px 6px 4px rgba(0,0,0,0.2);
                 .read-more {
-                    font-size: 35px;
+                    
                 }
             }
 
@@ -55,7 +111,7 @@
                 height: 40px;
                 width: 100%;
                 position: absolute;
-                top: -20px;
+                top: 0;
                 left: 0;
                 right: 0;
                 margin: 0 auto;
@@ -63,7 +119,7 @@
                 background-color: $mainColor;
                 color: #fff;
                 text-align: center;
-                font-size: 16px;
+                font-size: 20px;
                 font-family: $mainFont;
                 line-height: 40px;
             }
@@ -76,7 +132,11 @@
                 text-indent: 15px;
                 font-family: $mainFont;
                 color: #666;
-                font-size: 16px;
+                font-size: 18px;
+
+                overflow: auto;
+                max-height: 100%;
+                font-weight: bold;
             }
 
             .item__read-more {
@@ -92,17 +152,18 @@
                 color: $mainColor;
                 font-size: 30px;
 
-                transition-property: font-size;
-                transition-duration: 0.2s;
-                transition-timing-function: linear;
+                
 
                 span {
-                    position: absolute;
-                    bottom: 10px;
+                    display: inline-block;
+                    text-align: center;
+                    width: 42px;
+                    
+                    
 
-                    left: 0;
-                    right: 0;
-                    margin: 0 auto;
+                    transition-property: transform, color;
+                    transition-duration: .35s;
+                    transition-timing-function: linear;
                 }
             }
         }

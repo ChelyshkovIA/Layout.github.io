@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Camp</title>
+    <link rel="stylesheet" type="text/css" href="fontello-0106043a/css/fontello.css">
+    <link rel="stylesheet" href="fontello-courses/css/fontello.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/kidsCamp.css">
+    <script src="JS/kidsCamp.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__mobile mobile">
+            <div class="mobile__head">
+                <img class="mobile__logo" src="images/logo2.png" alt="logo of our site">
+                <div class="mobile__burger">
+                    <span class="mobile-menu__icon icon-menu"></span>
+                    <span class="mobile-menu__icon mobile-menu__icon--hidden icon-back"></span>
+                </div>
+            </div>
+
+            <nav class="mobile__nav mobile-nav">
+                <a class="mobile-nav__link" href="index.html">Главная страница</a>
+
+                <a class="mobile-nav__link" href="#dates">
+                    <span>Даты</span> 
+                    <span class="mobile-link__icon icon-calendar-inv"></span>
+                </a>
+
+                <a class="mobile-nav__link" href="#age">
+                    <span>Для кого</span> 
+                    <span class="mobile-link__icon icon-child"></span>
+                </a>
+
+                <a class="mobile-nav__link" href="#programm">
+                    <span>Программа</span> 
+                    <span class="mobile-link__icon icon-list-nested"></span>
+                </a>
+
+                <a class="mobile-nav__link" href="#timetable">
+                    <span>Распорядок дня</span> 
+                    <span class="mobile-link__icon icon-cloud-sun"></span>
+                </a>
+
+                <a class="mobile-nav__link" href="#cost">
+                    <span>Стоимость</span> 
+                    <span class="mobile-link__icon icon-wallet"></span>
+                </a>
+
+                <a class="mobile-nav__link" href="#conditions">
+                    <span>Условия пребывания</span> 
+                    <span class="mobile-link__icon icon-doc-text-inv"></span>
+                </a>
+
+                <a class="mobile-nav__link" href="#food">
+                    <span>Питание</span> 
+                    <span class="mobile-link__icon icon-users"></span>
+                </a> 
+            </nav>
+        </div>
+
+        <div class="header__phones phones">
+            Телефон: <a href="tel:+375-29-132-57-77">+375-29-132-57-77</a><br/>
+            Почта: <a href="mailto:gmt3@yandex.by">gmt3@yandex.by</a>
+        </div>
+
+
+        <div class="header__desktop desktop">
+            <div class="desktop__head">
+                <a class="desktop__logo" href="index.html"><img class="desktop__logo" src="images/logo2.png" alt=""></a>
+
+                <div class="desktop__nav">
+                    <a class="desktop__link" href="index.html">Главная страница</a>
+                    <a class="desktop__link" href="#dates">Когда</a>
+                    <a class="desktop__link" href="#format">Формат</a>
+                    <a class="desktop__link" href="#timetable">Распорядок дня</a>
+                    <a class="desktop__link" href="#cost">Стоимость</a>
+                    <a class="desktop__link" href="#conditions">Условия пребывания</a>
+                    <a class="desktop__link" href="#food">Питание</a>    
+                </div>
+            </div>
+        </div>
+
+        <div class="header__poster poster">
+
+            <h1 class="poster__text">
+                Летний городской языковой лагерь «ProEnglish»
+            </h1>
+            
+            <span class="poster-icon icon-down-open"></span>
+
+            <img class="poster__img" src="images/poster__1.jpg" alt="">
+        </div>
+
+        <div class="poster__contacts contacts">
+            <div class="contacts__item contacts__item--starter" title="Нажмите, чтобы посмотреть контакты">
+                <img class="contacts__img contacts__img--starter" src="images/call.png" alt="Нажмите, чтобы посмотреть контакты">
+            </div>
+            <a href="tg://resolve?domain=Greenwich_languagecenter" class="contacts__item contacts__item--social contacts__item--tg">
+                <img class="contacts__img contacts__img--tg" src="images/telegram.png" alt="telegram">
+            </a>
+            <a href="viber://add?number=375291325777" class="contacts__item contacts__item--social contacts__item--vbr">
+                <img class="contacts__img contacts__img--vbr" src="images/viber.png" alt="viber">
+            </a>
+            <a href="https://wa.me/375291325777" class="contacts__item contacts__item--social contacts__item--wh">
+                <img class="contacts__img contacts__img--wh" src="images/whatsapp.png" alt="whatsapp">
+            </a>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__item item" id="dates">
+            <div style="display: none;">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>    
+            <h2 class="item__title title">Когда:</h2>
+
+            <img class="item__img item-icon" src="images/timetable.png" alt="">
+
+            <h4 class="item__subtitle">Июль-август 2020 года</h4>
+
+            <ul class="item__list">
+                <li class="item-list__item">- 1 смена: 29 июня - 10 июля</li>
+                <li class="item-list__item">- 2 смена: 13 июля - 24 июля</li>
+                <li class="item-list__item">- 3 смена: 27 июля - 7 августа</li>
+                <li class="item-list__item">- 4 смена: 10 августа - 21 августа</li>
+            </ul>
+        </div>
+
+        <div class="main__item item" id="age">
+            <div style="display: none;">Icons made by <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <h2 class="item__title title">Для кого:</h2>
+
+            <img class="item__img item-icon" src="images/age.png" alt="">
+
+            <h4 class="item__subtitle">Возраст</h4>
+
+            <ul class="item__list">
+                <li class="item-list__item">- Для детей 7 - 10 лет</li>
+                <li class="item-list__item">- Уровень владения английским: Starter+</li>
+            </ul>
+        </div>
+
+        <div class="main__item item" id="format">
+            <div style="display: none;">Icons made by <a href="https://www.flaticon.com/authors/ultimatearm" title="ultimatearm">ultimatearm</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <h2 class="item__title title">Формат:</h2>
+
+            <img class="item__img item-icon" src="images/camping.png" alt="">
+
+            <p class="item__text">Летний языковый лагерь дневного пребывания (полный или сокращенный день) с практическими занятиями английским языком и творческими мероприятиями (с 09:00 до 17:00).</p>
+
+            <ul class="item__list">
+                <li class="item-list__item">- Light: пребывание в лагере с 09.00 до 13.00</li>
+                <li class="item-list__item">- Full: пребывание в лагере с 09.00 до 17.00</li>
+            </ul>
+        </div>
+
+        <div class="main__item item" id="programm">
+            <div style="display: none;">Icons made by <a href="https://www.flaticon.com/authors/catkuro" title="catkuro">catkuro</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+            <h2 class="item__title title">Программа:</h2>
+
+            <img class="item__img item-icon" src="images/plan.png" alt="">
+
+            <h4 class="item__subtitle">Языковой блок:</h4>
+
+            <ul class="item__list">
+                <li class="item-list__item">- максимум языковой практики</li>
+                <li class="item-list__item">- коммуникативные игры</li>
+                <li class="item-list__item">- знакомство с культурой англоязычных стран</li>
+                <li class="item-list__item">- проекты, песни, аудио и видео репортажи</li>
+            </ul>
+            
+            <h4 class="item__subtitle">Творческий блок:</h4>
+
+            <ul class="item__list">
+                <li class="item-list__item">- поделки своими руками</li>
+                <li class="item-list__item">- мастер-классы по рисованию и лепке</li>
+                <li class="item-list__item">- постановка театральных сценок</li>
+                <li class="item-list__item">- настольные игры и конкурсы</li>
+                <li class="item-list__item">- обучающие мультфильмы и фильмы</li>
+                <li class="item-list__item">- интерактивные занятия</li>
+            </ul>
+
+            <h4 class="item__subtitle">Спортивный блок:</h4>
+
+            <ul class="item__list">
+                <li class="item-list__item">- игры на свежем воздухе</li>
+                <li class="item-list__item">- ежедневная утренняя зарядка</li>
+                <li class="item-list__item">- прогулки в парке и квесты</li>
+            </ul>
+
+            <p class="item__text">*** Программа пребывания может меняться в зависимости от погодных условий</p>
+        </div>
+
+        <div class="main__item item item--timetable" id="timetable">
+            <div style="display: none;">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <h2 class="item__title title">Распорядок дня:</h2>
+
+            <img class="item__img item-icon" src="images/calendar.png" alt="">
+
+            <div class="item__timetable timetable">
+                <div class="timetable__item">
+                    <div class="timetable__time-huge-screen">
+                        09.00
+                    </div>
+
+                    <div class="timetable__time-small-screen">
+                        <div class="timetable__circle"></div>
+
+                        <div class="small-screen__time">09.00</div>
+                        <div class="small-screen__dedscription">Прибытие в лагерь</div>
+                    </div>
+                </div>
+
+                <div class="timetable__item">
+                    <div class="timetable__time-huge-screen">
+                        09.00-09.45
+                    </div>
+
+                    <div class="timetable__time-small-screen">
+                        <div class="timetable__circle"></div>
+
+                        <div class="small-screen__time">09.00-09.45</div>
+                        <div class="small-screen__dedscription">Ознакомление с планом работы. Мини зарядка.</div>
+                    </div>
+                </div>
+
+                <div class="timetable__item">
+                    <div class="timetable__time-huge-screen">
+                        09.45-10.00
+                    </div>
+
+                    <div class="timetable__time-small-screen">
+                        <div class="timetable__circle"></div>
+
+                        <div class="small-screen__time">09.45-10.00</div>
+                        <div class="small-screen__dedscription">Перерыв. Витаминный перекус.</div>
+                    </div>
+                </div>
+
+                <div class="timetable__item">
+                    <div class="timetable__time-huge-screen">
+                        10.00-13.00
+                    </div>
+
+                    <div class="timetable__time-small-screen">
+                        <div class="timetable__circle"></div>
+
+                        <div class="small-screen__time">10.00-13.00</div>
+                        <div class="small-screen__dedscription">Языковой блок. Занятие по английскому: игры, конкурсы, творческие задания, проекты.</div>
+                    </div>
+                </div>
+
+                <div class="timetable__item">
+                    <div class="timetable__time-huge-screen">
+                        13.00-14.00 
+                    </div>
+
+                    <div class="timetable__time-small-screen">
+                        <div class="timetable__circle"></div>
+
+                        <div class="small-screen__time">13.00-14.00 </div>
+                        <div class="small-screen__dedscription">Обед**.</div>
+                    </div>
+                </div>
+
+                <div class="timetable__item">
+                    <div class="timetable__time-huge-screen">
+                        14.00-17.00 
+                    </div>
+
+                    <div class="timetable__time-small-screen">
+                        <div class="timetable__circle"></div>
+
+                        <div class="small-screen__time">14.00-17.00 </div>
+                        <div class="small-screen__dedscription">Творческий блок.</div>
+                    </div>
+                </div>
+
+                <div class="timetable__item">
+                    <div class="timetable__time-huge-screen">
+                        14.00-17.00 
+                    </div>
+
+                    <div class="timetable__time-small-screen">
+                        <div class="timetable__circle"></div>
+
+                        <div class="small-screen__time">14.00-17.00 </div>
+                        <div class="small-screen__dedscription">Спортивный блок.</div>
+                    </div>
+                </div>
+
+                <div class="timetable__item">
+                    <div class="timetable__time-huge-screen">
+                        15.30-15.45  
+                    </div>
+
+                    <div class="timetable__time-small-screen">
+                        <div class="timetable__circle"></div>
+
+                        <div class="small-screen__time">15.30-15.45  </div>
+                        <div class="small-screen__dedscription">Перерыв. Сладкий перекус.</div>
+                    </div>
+                </div>
+
+                <div class="timetable__item">
+                    <div class="timetable__time-huge-screen">
+                        17.00  
+                    </div>
+
+                    <div class="timetable__time-small-screen">
+                        <div class="timetable__circle"></div>
+
+                        <div class="small-screen__time">17.00</div>
+                        <div class="small-screen__dedscription">Уход домой.</div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="item__text">****Если вам необходимо приводить ребенка раньше 09.00 или забирать позже 17.00, сообщите нам, мы постараемся это организовать. За это не нужно дополнительно платить.</p>
+        </div>
+
+        <div class="main__item item" id="cost">
+            <div style="display: none;">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <h2 class="item__title title">Стоимость:</h2>
+
+            <img class="item__img item-icon" src="images/money.png" alt="">
+
+            <h4 class="item__subtitle">Light: 230 BYN</h4>
+
+            <p class="item__text">В стоимость входит:</p>
+
+            <ul class="item__list">
+                <li class="item-list__item">-	30 академических часов занятий английским языком</li>
+                <li class="item-list__item">-	питание (витаминный перекус)</li>
+                <li class="item-list__item">-	сопровождение профессиональными педагогами</li>
+            </ul>
+
+            <h4 class="item__subtitle">Full: 295 BYN</h4>
+
+            <p class="item__text">В стоимость входит:</p>
+
+            <ul class="item__list">
+                <li class="item-list__item">-	30 академических часов занятий английским языком</li>
+                <li class="item-list__item">-	питание (витаминный перекус и полдник)</li>
+                <li class="item-list__item">-	творческие мероприятия, мастер-классы</li>
+                <li class="item-list__item">-	выездная экскурсия с проведением игрового мероприятия-квеста</li>
+                <li class="item-list__item">-	сопровождение профессиональными педагогами</li>
+            </ul>
+        </div>
+
+        <div class="main__item item" id="conditions">
+            <div style="display: none;">Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <h2 class="item__title title">Условия пребывания:</h2>
+
+            <img class="item__img item-icon" src="images/home.png" alt="">
+
+            <ul class="item__list">
+                <li class="item-list__item">- комфортабельная учебная аудитория</li>
+                <li class="item-list__item">- возможность соблюдать питьевой режим</li>
+                <li class="item-list__item">- занятия в небольших группах (до 8 чел.)</li>
+                <li class="item-list__item">- обеспечение всеми необходимыми материалами и канцелярскими принадлежностями для языковых и творческих занятий</li>
+            </ul>
+            
+            <h4 class="item__subtitle">В лагере созданы все условия для безопасного пребывания детей:</h4>
+
+            <ul class="item__list">
+                <li class="item-list__item">- проведение бесконтактной термометрии перед началом занятий</li>
+                <li class="item-list__item">- наличие антисептика</li>
+                <li class="item-list__item">- ежедневная уборка помещений дезинфицирующими средствами</li>
+            </ul>
+        </div>
+
+        <div class="main__item item" id="food">
+            <div style="display: none;">Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <h2 class="item__title title">Питание:</h2>
+
+            <img class="item__img item-icon" src="images/soup.png" alt="">
+
+            <ul class="item__list">
+                <li class="item-list__item">- ежедневные горячие обеды</li>
+                <li class="item-list__item">- витаминные и сладкие перекусы (фрукты, соки, печенье)</li>
+            </ul>
+
+            <p class="item__text">**Стоимость горячих обедов оплачивается дополнительно (70 BYN). Либо вы можете подготовить для ребенка «ссобойку», которую мы разогреем.</p>
+        </div>
+
+        <div class="main__item item" id="contacts">
+            <div style="display: none;">Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <h2 class="item__title title">Контакты:</h2>
+
+            <img class="item__img item-icon" src="images/email.png" alt="">
+
+            <ul class="item__list">
+                <li class="item-list__item">Телефон: <a href="tel:+375291325777">+375 29 132 57 77</a></li>
+                <li class="item-list__item">Telegram: <a href="tg://resolve?domain=Greenwich_languagecenter">+375 29 132 57 77</a></li>
+                <li class="item-list__item">WhatsApp: <a href="whatsapp://send?phone=+375291325777">+375 29 132 57 77</a></li>
+                <li class="item-list__item">Viber: <a href="viber://add?number=375291325777">+375 29 132 57 77</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="footer"></footer>
+</body>
+</html>

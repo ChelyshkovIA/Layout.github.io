@@ -49,16 +49,21 @@ ul, li, ol {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background-color: #2a5736;
-  padding: 0 10px;
+  background-color: #265a3d;
+  padding: 0 10px 0 0;
+  box-shadow: 2px 0px 20px 0px black;
 }
 .header .breads .logo {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   color: #fff;
-  font-size: 20px;
+  height: 100%;
+}
+.header .breads .logo .logo__img {
+  object-fit: cover;
+  height: 100%;
 }
 .header .breads .go-back-link {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   color: #fff;
   font-size: 20px;
 }
@@ -68,7 +73,7 @@ ul, li, ol {
 }
 .main .title .title__text {
   text-align: center;
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   color: #aaa;
   font-size: 30px;
 }
@@ -78,23 +83,69 @@ ul, li, ol {
   flex-wrap: wrap;
   justify-content: center;
 }
+.main .courses-block .courses-block__bg {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: -1;
+  transition-property: bakcground-color;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  background-color: rgba(255, 255, 255, 0);
+}
+.main .courses-block .courses-block__bg.courses-block__bg--active {
+  z-index: 6;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.main .courses-block .courses-block__bg.courses-block__bg--dying {
+  background-color: rgba(0, 0, 0, 0);
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
 .main .courses-block .item {
-  cursor: pointer;
-  display: inline-block;
   position: relative;
+  z-index: 5;
+  transition: box-shadow 0.2s linear;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
   width: 90%;
   margin: 30px 0;
-  padding: 40px 10px 35px 10px;
+  padding: 60px 10px 10px 10px;
   box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.2);
-  transition-property: box-shadow;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
+}
+.main .courses-block .item.huge-item {
+  position: fixed;
+  max-height: calc(100vh - 80px);
+  width: 90%;
+  max-width: 700px;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #fff;
+  z-index: 7;
+  transition: box-shadow 0.2s linear;
+}
+.main .courses-block .item.huge-item .read-more {
+  margin-top: 10px;
+}
+.main .courses-block .item.huge-item .read-more span {
+  color: red;
+  transform: rotate(45deg);
+}
+.main .courses-block .item.huge-item .content {
+  white-space: pre-wrap;
+  overflow: auto;
 }
 .main .courses-block .item:hover {
   box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.2);
-}
-.main .courses-block .item:hover .read-more {
-  font-size: 35px;
 }
 .main .courses-block .item .item__bg {
   position: absolute;
@@ -103,41 +154,42 @@ ul, li, ol {
   height: 40px;
   width: 100%;
   position: absolute;
-  top: -20px;
+  top: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
-  background-color: #2a5736;
+  background-color: #265a3d;
   color: #fff;
   text-align: center;
-  font-size: 16px;
-  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 20px;
+  font-family: "Cormorant Garamond", serif;
   line-height: 40px;
 }
 .main .courses-block .item .content {
   text-indent: 15px;
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   color: #666;
-  font-size: 16px;
+  font-size: 18px;
+  overflow: auto;
+  max-height: 100%;
+  font-weight: bold;
 }
 .main .courses-block .item .read-more {
   width: 100%;
   display: inline-block;
   text-align: center;
   margin: 10px 0;
-  font-family: "Montserrat Alternates", sans-serif;
-  color: #2a5736;
+  font-family: "Cormorant Garamond", serif;
+  color: #265a3d;
   font-size: 30px;
-  transition-property: font-size;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
 }
 .main .courses-block .item .read-more span {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+  width: 42px;
+  transition-property: transform, color;
+  transition-duration: 0.35s;
+  transition-timing-function: linear;
 }
 
 @media (min-width: 700px) {

@@ -66,6 +66,18 @@
 			max-width: 600px;
 		}
 
+		.about-comp {
+			text-indent: 20px;
+			text-align:left ;
+			width: 100%;
+			font-family: $mainFont;
+			color: #232323;
+			font-size: 25px;
+			padding: 10px;
+			margin-bottom: 40px;
+			font-weight: bold;
+		}
+
 		.main__item {
 			margin-top: 40px;
 			margin-bottom: 40px;
@@ -88,6 +100,7 @@
 				font-family: $mainFont;
 				color: $menuFontIndex;
 				font-size: 25px;
+				font-weight: bold;
 			}
 
 			.item__list {
@@ -100,7 +113,7 @@
 					padding: 2px 0;
 					font-family: $mainFont;
 					color: #fff;
-					font-size: 17px;
+					font-size: 20px;
 				}
 			}
 

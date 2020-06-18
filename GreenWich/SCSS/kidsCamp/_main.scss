@@ -1,0 +1,205 @@
+.main {
+    .main__item {
+
+    }
+
+    .item {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background-color: rgba(0,0,0,0.1);
+        margin: 10px;
+        width: calc(100% - 20px);
+        .item__title {
+
+        }
+
+        .title {
+            width: 100%;
+            text-align: center;
+            font-size: 30px;
+            font-family: $mainFont;
+            color: #666;
+            font-weight: bold;
+
+            padding: 80px 0 20px 0;
+        }
+
+        .iten__img {
+
+        }
+
+        .item-icon {
+            object-fit: cover;
+            width: 30%;
+            max-width: 134px;
+        }
+
+        .item__subtitle {
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            font-family: $mainFont;
+            color: #666;
+            font-weight: bold;
+
+            padding: 30px 0 20px 0;
+        }
+
+        .item__list {
+            width: 100%;
+            padding: 20px 0 20px 30px;
+
+            .item-list__item {
+                padding: 3px 0;
+                font-size: 20px;
+                font-family: $mainFont;
+                color: #222;
+                font-weight: bold;
+            }
+        }
+
+        .item__text {
+            width: 100%;
+            display: inline-block;
+            padding: 15px 30px 20px 30px;
+            font-family: $mainFont;
+            color: #333;
+            font-size: 20px;
+
+            text-indent: 15px;
+        }
+
+        .item__timetable {
+
+        }
+
+        .timetable {
+            margin-top: 40px;
+            width: 100%;
+            .timetable__item {
+
+                display: flex;
+
+
+                .timetable__time-huge-screen {
+                    display: none;
+                }
+
+                .timetable__time-small-screen {
+                    position: relative;
+                    padding: 20px 0 20px 30px;
+                    border-left: 2px solid #265a3d;
+                    margin-left: 50px;
+
+                    .timetable__circle {
+                        position: absolute;
+                        top: 0;
+                        left: -9px;
+
+                        width: 16px;
+                        height: 16px;
+                        border: 2px solid #265a3d;
+                        background-color: #265a3d;
+                        border-radius: 8px;
+                    }
+
+                    .small-screen__time {
+                        font-family: $mainFont;
+                        font-size: 25px;
+                        color: #555;
+                        font-weight: bold;
+                        padding-bottom: 20px;
+                    }   
+
+                    .small-screen__dedscription {
+                        font-family: $mainFont;
+                        font-size: 20px;
+                        color: #212121;
+                        font-weight: bold;
+                        padding-bottom: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 800px) {
+    .main {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .main__item {
+
+        }
+
+        .item {
+            margin: 10px;
+            width: calc(50% - 20px);
+            background-color: rgba(0,0,0,0.1);
+
+            &.item--timetable {
+                width: calc(100% - 20px);
+                padding: 0 20px 20px 0
+            }
+        }
+    }
+}
+
+@media(min-width: 900px) {
+    .main {
+
+
+        .item {
+
+            .timetable {
+
+                .timetable__item {
+
+                    .timetable__time-huge-screen {
+                        display: inline-block;
+                        width: 25%;
+                        font-family: $mainFont;
+                        font-size: 25px;
+                        color: #555;
+                        font-weight: bold;
+                        padding-bottom: 20px;
+
+                        text-align: right;  
+                    }
+
+                    .timetable__time-small-screen {
+                        width: 75%;
+
+                        .small-screen__time {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1000px) {
+    .main {
+        .item {
+            max-width: 370px;
+            &.item--timetable {
+                max-width: 760px;
+                padding: 0 20px 20px 0
+            }
+        }
+    }
+}
+
+@media(min-width: 1205px) {
+    .main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}

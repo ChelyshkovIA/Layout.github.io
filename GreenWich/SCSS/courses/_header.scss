@@ -12,7 +12,9 @@
         justify-content: space-between;
 
         background-color: $mainColor;
-        padding: 0 10px;
+        padding: 0 10px 0 0;
+
+        box-shadow: 2px 0px 20px 0px rgba(0,0,0,1);
         .breads__logo {
 
         }
@@ -20,7 +22,12 @@
         .logo {
             font-family: $mainFont;
             color: #fff;
-            font-size: 20px;
+            height: 100%;
+
+            .logo__img {
+                object-fit: cover;
+                height: 100%;
+            }
         }
 
         .breads__go-back-link {

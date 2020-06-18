@@ -4,8 +4,6 @@
 	display: flex;
 	flex-direction: column;
 	.footer__item {
-		
-		// padding: 10px;
 		margin-top: 20px;
 		margin-bottom: 60px;
 		background-color: rgba(40,40,40,0.65);
@@ -123,11 +121,30 @@
 		}
 
 		.footer__logo {
-			font-family: $mainFont;
-			color: #fff;
-			font-size: 30px;
+			height: 60px;
+
+			.footer-logo__image {
+				object-fit: cover;
+				height: 100%;
+			}
+		}
+
+		.footer-ip__info {
+
+		}
+
+		.ip-info {
+
+			.ip-info__text {
+				font-family: $mainFont;
+				color: #fff;
+				font-size: 17px;
+				padding: 5px;
+			}
 		}
 	}
+
+
 }
 
 @media (min-width: 900px) {
@@ -176,6 +193,15 @@
 						margin-right: auto;	
 					}
 				}
+			}
+
+			.footer-ip__info {
+
+			}
+	
+			.ip-info {
+	
+				max-width: 500px;
 			}
 		}
 	}

@@ -1,6 +1,13 @@
 window.addEventListener('DOMContentLoaded', function() {
 	let burgerMenu = document.querySelector('.burger');
 	let menuClose = document.querySelector('.menu__back');
+	let logo = document.querySelector('.mobile-logo__image');
+	const width = document.documentElement.clientWidth;
+
+	console.log(width);
+	if (width >= 583 && width <= 1030) {
+		logo.src = 'images/Logo Greenwich png.png';
+	}
 
 	let mobileMenu = document.querySelector('.mobile__menu');
 
