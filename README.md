@@ -9,7 +9,7 @@ Web developer
 ---
 Foreign language courses - Greenwich project
 ## [Greenwich](http://gmt3.by/)
-
+---
 Here you can find my 
 layout projects (some copies of popular sites)
 
