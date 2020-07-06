@@ -7,6 +7,9 @@ Web developer
 * **E-Mail [great.mars15@gmail.com]**
 
 ---
+Cinemas web project
+## [Chelyshkoff Cinema](https://cinemachelyshkoff.000webhostapp.com/)
+---
 Foreign language courses - Greenwich project
 ## [Greenwich](http://gmt3.by/)
 ---
