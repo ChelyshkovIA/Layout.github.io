@@ -10,9 +10,6 @@ Web developer
 Cinemas web project
 ## [Chelyshkoff Cinema](https://cinemachelyshkoff.000webhostapp.com/)
 ---
-Foreign language courses - Greenwich project
-## [Greenwich](http://gmt3.by/)
----
 Here you can find my 
 layout projects (some copies of popular sites)
 
