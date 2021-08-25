@@ -131,8 +131,8 @@ export class View {
 		let isEmptyCell = false;
 
 		while (!isEmptyCell) {
-			const randomX = this.getRandomFromTo(0, this.SIZE_X);
-			const randomY = this.getRandomFromTo(0, this.SIZE_Y);
+			const randomX = this.getRandomFromTo(0, this.SIZE_X - 1);
+			const randomY = this.getRandomFromTo(0, this.SIZE_Y - 1);
 
 			const cell = this.getCellByCoords({x: randomX, y: randomY});
 
