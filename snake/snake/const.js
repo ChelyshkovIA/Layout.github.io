@@ -3,7 +3,14 @@ export const CONST = {
 		ROW: "row",
 		CELL: "cell",
 		CELL_SNAKE: "cell--snake",
-		CELL_FOOD: "cell--food"
+		CELL_FOOD: "cell--food",
+		DIED_HEADER_TEXT: "header-text--died"
+	},
+
+	DOM_IDs: {
+		HEADER_TEXT: "header_text",
+		TOTAL_SCORE: "total_score",
+		RECORD: "record"
 	},
 
 	CELL_TYPES: {

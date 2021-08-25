@@ -11,10 +11,12 @@ export class Controller {
 		this.Model = model;
 	}
 
+	PREV_SCORE = 0;
+	CURRENT_SCORE = 0;
 	CONTAINS_FOOD = false;
 	MOVE_STATE = false;
 	MAIN_DIRECTION = CONST.DIRECTIONS.TOP;
-	MAIN_SPEED = CONST.SPEED_TYPES.SLOW;
+	MAIN_SPEED = CONST.SPEED_TYPES.FAST;
 	SNAKE_HEAD_COORDS = Object.assign({}, CONST.DEFAULT_SNAKE_HEAD_COORDS);
 	SNAKE_COORDS = Object.assign([], CONST.DEFAULT_SNAKE_COORDS);
 
@@ -25,7 +27,10 @@ export class Controller {
 	 */
 	start(gameContainerId) {
 		this.Model.importStyles("snake/styles/main.css");
+		this.Model.importStyles("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 		this.View.renderGameField(gameContainerId, 20, 20);
+		this.View.setTotalScore(this.CURRENT_SCORE);
+		this.View.setRecordScore(this.CURRENT_SCORE);
 
 		this.drawSnake();
 
@@ -40,7 +45,9 @@ export class Controller {
 	 */
 	async handleEnterPress(event) {
 		if (event.code === "Enter" && !this.MOVE_STATE) {
+			this.MAIN_DIRECTION = CONST.DIRECTIONS.RIGHT;
 			this.MOVE_STATE = true;
+			this.View.setTotalScore(this.CURRENT_SCORE);
 
 			let isCorrectMove = true;
 	
@@ -49,8 +56,11 @@ export class Controller {
 					await this.move();
 				} catch {
 					isCorrectMove = false;
+					this.updateRecordScore();
+					this.CURRENT_SCORE = 0;
 					this.MOVE_STATE = false;
 					this.CONTAINS_FOOD = false;
+					this.View.showDeathAnimation();
 					this.View.clearGameField();
 					this.updateSnakeCoords();
 					this.drawSnake();
@@ -60,6 +70,16 @@ export class Controller {
 	}
 	
 	/**
+	 * Updates record score.
+	 */
+	updateRecordScore() {
+		if (this.CURRENT_SCORE > this.PREV_SCORE) {
+			this.PREV_SCORE = this.CURRENT_SCORE;
+			this.View.setRecordScore(this.PREV_SCORE);
+		}
+	}
+
+	/**
 	 * Handles Enter key pressing.
 	 * @param {Event} event Event object.
 	 * @returns {void}
@@ -67,16 +87,20 @@ export class Controller {
 	handleArrowsPress(event) {
 		switch (event.code) {
 			case "ArrowUp":
-				this.MAIN_DIRECTION = CONST.DIRECTIONS.TOP;
+				if (this.MAIN_DIRECTION != CONST.DIRECTIONS.BOTTOM)
+					this.MAIN_DIRECTION = CONST.DIRECTIONS.TOP;
 				break;
 			case "ArrowDown":
-				this.MAIN_DIRECTION = CONST.DIRECTIONS.BOTTOM;
+				if (this.MAIN_DIRECTION != CONST.DIRECTIONS.TOP)
+					this.MAIN_DIRECTION = CONST.DIRECTIONS.BOTTOM;
 				break;
 			case "ArrowLeft":
-				this.MAIN_DIRECTION = CONST.DIRECTIONS.LEFT;
+				if (this.MAIN_DIRECTION != CONST.DIRECTIONS.RIGHT)
+					this.MAIN_DIRECTION = CONST.DIRECTIONS.LEFT;
 				break;
 			case "ArrowRight":
-				this.MAIN_DIRECTION = CONST.DIRECTIONS.RIGHT;
+				if (this.MAIN_DIRECTION != CONST.DIRECTIONS.LEFT)
+					this.MAIN_DIRECTION = CONST.DIRECTIONS.RIGHT;
 				break;
 			default:
 				return;
@@ -146,6 +170,7 @@ export class Controller {
 			this.SNAKE_COORDS.unshift(snakeTailCoords);
 			this.View.drawSquare(snakeHeadCell, CONST.CELL_TYPES.SNAKE);
 			this.CONTAINS_FOOD = false;
+			this.View.setTotalScore(++this.CURRENT_SCORE);
 		}
 
 		return new Promise((r) => {

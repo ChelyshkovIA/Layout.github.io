@@ -1,5 +1,7 @@
-* {
+.game-section * {
 	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 .game-section {
@@ -14,8 +16,35 @@
 	align-items: center;
 }
 
+.text {
+	font-family: 'Press Start 2P', cursive;
+}
+
 .header-text {
 	text-align: center;
+	padding: 20px 0;
+	color: rgb(114, 114, 114);
+	font-size: 30px;
+
+	transition: color .2s linear;
+}
+
+.header-text--died {
+	color: red;
+}
+
+.header-info-section {
+	font-display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.text-total-score {
+	margin: 0 0 10px 0;
+}
+
+.text-record {
+	margin: 0 0 10px 0;
 }
 
 .game-field {
@@ -43,7 +72,7 @@
 }
 
 .cell--snake {
-	background-color: rgb(45, 15, 218);
+	background-color: rgb(114, 114, 114);
 }
 
 .cell--food {

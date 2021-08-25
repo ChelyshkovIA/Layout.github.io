@@ -8,6 +8,7 @@ import { Controller } from "./controller.js";
  * @param {string} containerId 
  * @returns {void}
  */
+
 export function importGame(containerId) {
 	new Controller(new View(), new Model()).start(containerId);
 }

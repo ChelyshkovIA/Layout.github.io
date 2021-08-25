@@ -26,9 +26,16 @@ export class View {
 
 		let markup = document.createElement("section");
 		markup.className = "game-section";
-		markup.innerHTML = `<div class="header">
-			<h1 class="header-text">SNAKE</h1>
-		</div>`;
+		markup.innerHTML = `
+		<div class="header">
+			<h1 class="text header-text" id="${CONST.DOM_IDs.HEADER_TEXT}">SNAKE</h1>
+		</div>
+		
+		<div class="header-info-section">
+			<p class="text text-total-score">TOTAL SCORE: <span id="${CONST.DOM_IDs.TOTAL_SCORE}"></span></p>
+			<p class="text text-record">RECORD: <span id="${CONST.DOM_IDs.RECORD}"></span></p>
+		</div>
+		`;
 
 		const gameField = document.createElement("div");
 		gameField.className = "game-field";
@@ -161,5 +168,34 @@ export class View {
 		} else {
 			return CONST.CELL_TYPES.EMPTY;
 		}
+	}
+
+	/**
+	 * Shows snake death animation.
+	 */
+	showDeathAnimation() {
+		const headerText = document.querySelector(`#${CONST.DOM_IDs.HEADER_TEXT}`);
+		headerText.classList.add(CONST.CSS_CLASSES.DIED_HEADER_TEXT);
+		setTimeout(() => {
+			headerText.classList.remove(CONST.CSS_CLASSES.DIED_HEADER_TEXT);
+		}, 1000);
+	}
+
+	/**
+	 * Updates total score (text in the header).
+	 * @param {number} score Total score number.
+	 */
+	setTotalScore(score) {
+		const totalScore = this.gameField.querySelector(`#${CONST.DOM_IDs.TOTAL_SCORE}`);
+		totalScore.innerText = score;
+	}
+
+	/**
+	 * Updates record score.
+	 * @param {number} score Snake record score (text in the header).
+	 */
+	setRecordScore(score) {
+		const recordScore = this.gameField.querySelector(`#${CONST.DOM_IDs.RECORD}`);
+		recordScore.innerText = score;
 	}
 }
