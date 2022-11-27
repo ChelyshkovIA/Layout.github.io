@@ -1,7 +1,7 @@
 Layout projects (some copies of popular sites)
 
-## [BMW.com](https://chelyshkovia.github.io/BMWproject/BMWcom.html)
-## [BMW.com reportage](https://chelyshkovia.github.io/BMWproject/BMWreportage.html)
-## [BMW.com the2](https://chelyshkovia.github.io/BMWproject/BMWthe2.html)
+## [BMW.com](https://layout.github.io/BMWproject/BMWcom.html)
+## [BMW.com reportage](https://layout.github.io/BMWproject/BMWreportage.html)
+## [BMW.com the2](https://layout.github.io/BMWproject/BMWthe2.html)
 
 
